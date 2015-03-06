@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="lib/db" VERSION="20060926" COMMENT="XMLDB file for Mahara files plugin tables"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../lib/xmldb/xmldb.xsd"
+>
+<TABLES>
+        <TABLE NAME="external_services" COMMENT="built in and custom external services">
+          <FIELDS>
+            <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"/>
+            <FIELD NAME="name" TYPE="char" LENGTH="200" NOTNULL="true" SEQUENCE="false"/>
+            <FIELD NAME="enabled" TYPE="int" LENGTH="1" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"/>
+            <FIELD NAME="restrictedusers" TYPE="int" LENGTH="1" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"/>
+            <FIELD NAME="tokenusers" TYPE="int" LENGTH="1" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"/>
+            <FIELD NAME="component" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="ctime" TYPE="datetime" NOTNULL="true"/>
+            <FIELD NAME="mtime" TYPE="datetime" NOTNULL="false"/>
+          </FIELDS>
+          <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+          </KEYS>
+          <INDEXES>
+            <INDEX NAME="nameuk" UNIQUE="true" FIELDS="name"/>
+          </INDEXES>
+        </TABLE>
+        <TABLE NAME="external_functions" COMMENT="list of all external functions">
+          <FIELDS>
+            <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"/>
+            <FIELD NAME="name" TYPE="char" LENGTH="200" NOTNULL="true" SEQUENCE="false"/>
+            <FIELD NAME="classname" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false"/>
+            <FIELD NAME="methodname" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false"/>
+            <FIELD NAME="classpath" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="component" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false"/>
+          </FIELDS>
+          <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+          </KEYS>
+          <INDEXES>
+            <INDEX NAME="nameuk" UNIQUE="true" FIELDS="name" COMMENT="the external function names must be globally unique"/>
+          </INDEXES>
+        </TABLE>
+        <TABLE NAME="external_services_functions" COMMENT="lists functions available in each service group">
+          <FIELDS>
+            <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"/>
+            <FIELD NAME="externalserviceid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"/>
+            <FIELD NAME="functionname" TYPE="char" LENGTH="200" NOTNULL="true" SEQUENCE="false"/>
+          </FIELDS>
+          <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            <KEY NAME="externalserviceidfk" TYPE="foreign" FIELDS="externalserviceid" REFTABLE="external_services" REFFIELDS="id"/>
+          </KEYS>
+        </TABLE>
+        <TABLE NAME="external_tokens" COMMENT="Security tokens for accessing of external services">
+          <FIELDS>
+            <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"/>
+            <FIELD NAME="token" TYPE="char" LENGTH="128" NOTNULL="true" SEQUENCE="false" COMMENT="security token, aka private access key"/>
+            <FIELD NAME="tokentype" TYPE="int" LENGTH="4" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" COMMENT="type of token: 0=permanent, no session; 1=linked to current browser session via sid; 2=permanent, with emulated session"/>
+            <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="false" SEQUENCE="false" COMMENT="owner of the token"/>
+            <FIELD NAME="institution" TYPE="char" LENGTH="255" NOTNULL="true"/>
+            <FIELD NAME="externalserviceid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"/>
+            <FIELD NAME="sid" TYPE="char" LENGTH="128" NOTNULL="false" SEQUENCE="false" COMMENT="link to browser or emulated session"/>
+            <FIELD NAME="creatorid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="false" DEFAULT="1" SEQUENCE="false" COMMENT="user id of the token creator (useful to know when the administrator created a token and so display the token to a specific administrator)"/>
+            <FIELD NAME="iprestriction" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" COMMENT="ip restriction"/>
+            <FIELD NAME="validuntil" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" COMMENT="timestampt - valid until data"/>
+            <FIELD NAME="ctime" TYPE="datetime" NOTNULL="true"/>
+            <FIELD NAME="mtime" TYPE="datetime" NOTNULL="false"/>
+            <FIELD NAME="publickey" TYPE="text" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="created timestamp"/>
+            <FIELD NAME="publickeyexpires" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="created timestamp"/>
+            <FIELD NAME="wssigenc" TYPE="int" LENGTH="1" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"/>
+          </FIELDS>
+          <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            <KEY NAME="useridfk" TYPE="foreign" FIELDS="userid" REFTABLE="usr" REFFIELDS="id"/>
+            <KEY NAME="institutionfk" TYPE="foreign" FIELDS="institution" REFTABLE="institution" REFFIELDS="name"/>
+            <KEY NAME="externalserviceidfk" TYPE="foreign" FIELDS="externalserviceid" REFTABLE="external_services" REFFIELDS="id"/>
+            <KEY NAME="creatoridfk" TYPE="foreign" FIELDS="creatorid" REFTABLE="usr" REFFIELDS="id"/>
+          </KEYS>
+          <INDEXES>
+              <INDEX NAME="tokenuk" UNIQUE="true" FIELDS="token"/>
+          </INDEXES>
+        </TABLE>
+        <TABLE NAME="external_services_users" COMMENT="users allowed to use services with restricted users flag">
+          <FIELDS>
+            <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"/>
+            <FIELD NAME="externalserviceid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"/>
+            <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="false" SEQUENCE="false"/>
+            <FIELD NAME="institution" TYPE="char" LENGTH="255" NOTNULL="true"/>
+            <FIELD NAME="iprestriction" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" COMMENT="ip restriction"/>
+            <FIELD NAME="validuntil" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" COMMENT="timestampt - valid until data"/>
+            <FIELD NAME="ctime" TYPE="datetime" NOTNULL="false"/>
+            <FIELD NAME="mtime" TYPE="datetime" NOTNULL="false"/>
+            <FIELD NAME="publickey" TYPE="text" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="created timestamp"/>
+            <FIELD NAME="publickeyexpires" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="created timestamp"/>
+            <FIELD NAME="wssigenc" TYPE="int" LENGTH="1" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"/>
+          </FIELDS>
+          <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            <KEY NAME="externalserviceidfk" TYPE="foreign" FIELDS="externalserviceid" REFTABLE="external_services" REFFIELDS="id"/>
+            <KEY NAME="useridfk" TYPE="foreign" FIELDS="userid" REFTABLE="usr" REFFIELDS="id"/>
+            <KEY NAME="institutionfk" TYPE="foreign" FIELDS="institution" REFTABLE="institution" REFFIELDS="name"/>
+          </KEYS>
+        </TABLE>
+         <TABLE NAME="oauth_server_registry" COMMENT="Table holding consumer key/secret combos an user issued to consumers">
+          <FIELDS>
+            <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"  COMMENT="osr id"/>
+            <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="false" SEQUENCE="false" COMMENT="usr ref"/>
+            <FIELD NAME="externalserviceid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"/>
+            <FIELD NAME="institution" TYPE="char" LENGTH="255" NOTNULL="true"/>
+            <FIELD NAME="consumer_key" TYPE="char" LENGTH="128" NOTNULL="true" DEFAULT="" COMMENT="consumer key"/>
+            <FIELD NAME="consumer_secret" TYPE="char" LENGTH="128" NOTNULL="true" SEQUENCE="false" COMMENT="consumer secret"/>
+            <FIELD NAME="enabled" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" COMMENT="enabled"/>
+            <FIELD NAME="status" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="status"/>
+            <FIELD NAME="requester_name" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="requester name"/>
+            <FIELD NAME="requester_email" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="requester email"/>
+            <FIELD NAME="callback_uri" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="callback URI"/>
+            <FIELD NAME="application_uri" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="application URI"/>
+            <FIELD NAME="application_title" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="application title"/>
+            <FIELD NAME="application_descr" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="application description"/>
+            <FIELD NAME="application_notes" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="application notes"/>
+            <FIELD NAME="application_type"  TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="application type"/>
+            <FIELD NAME="ctime" TYPE="datetime" NOTNULL="true" SEQUENCE="false" COMMENT="creation timestamp"/>
+            <FIELD NAME="mtime" TYPE="datetime" NOTNULL="true" SEQUENCE="false" COMMENT="modified timestamp"/>
+          </FIELDS>
+          <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            <KEY NAME="consumerkeyuk" TYPE="unique" FIELDS="consumer_key"/>
+            <KEY NAME="useridfk" TYPE="foreign" FIELDS="userid" REFTABLE="usr" REFFIELDS="id"/>
+            <KEY NAME="externalserviceidfk" TYPE="foreign" FIELDS="externalserviceid" REFTABLE="external_services" REFFIELDS="id"/>
+            <KEY NAME="institutionfk" TYPE="foreign" FIELDS="institution" REFTABLE="institution" REFFIELDS="name"/>
+          </KEYS>
+        </TABLE>
+        <TABLE NAME="oauth_server_nonce" COMMENT="Nonce used by a certain consumer, every used nonce should be unique, this prevents replaying attacks">
+          <FIELDS>
+            <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"  COMMENT="osn id"/>
+            <FIELD NAME="consumer_key" TYPE="char" LENGTH="128" NOTNULL="true" DEFAULT="" COMMENT="consumer key"/>
+            <FIELD NAME="token" TYPE="char" LENGTH="64" NOTNULL="true" SEQUENCE="false" COMMENT="token"/>
+            <FIELD NAME="nonce" TYPE="char" LENGTH="80" NOTNULL="true" SEQUENCE="false" COMMENT="nonce"/>
+            <FIELD NAME="ctime" TYPE="datetime" NOTNULL="true"  SEQUENCE="false" COMMENT="creation timestamp"/>
+          </FIELDS>
+          <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            <KEY NAME="keysuk" TYPE="unique" FIELDS="consumer_key,token,ctime,nonce"/>
+          </KEYS>
+        </TABLE>
+         <TABLE NAME="oauth_server_token" COMMENT="Table used to verify signed requests sent to a server by the consumer">
+          <FIELDS>
+            <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"  COMMENT="ost id"/>
+            <FIELD NAME="osr_id_ref" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" COMMENT="osr ref"/>
+            <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="false" SEQUENCE="false" COMMENT="usr ref"/>
+            <FIELD NAME="token" TYPE="char" LENGTH="64" NOTNULL="true" SEQUENCE="false" COMMENT="token"/>
+            <FIELD NAME="token_secret" TYPE="char" LENGTH="64" NOTNULL="true" SEQUENCE="false" COMMENT="token secret"/>
+            <FIELD NAME="token_type" TYPE="char" LENGTH="20" NOTNULL="true" COMMENT="token type" ENUM="true" ENUMVALUES="'request', 'access'"/>
+            <FIELD NAME="authorized" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" COMMENT="authorised"/>
+            <FIELD NAME="referrer_host" TYPE="char" LENGTH="128" NOTNULL="true" DEFAULT="" COMMENT="referrer host"/>
+            <FIELD NAME="callback_uri" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="callback URI"/>
+            <FIELD NAME="verifier" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="verifier"/>
+            <FIELD NAME="token_ttl" TYPE="datetime" NOTNULL="true" SEQUENCE="false" DEFAULT="'9999-12-31'" COMMENT="ttl for token"/>
+            <FIELD NAME="ctime" TYPE="datetime" NOTNULL="true"  SEQUENCE="false" COMMENT="creation timestamp"/>
+          </FIELDS>
+          <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            <KEY NAME="tokenuk" TYPE="unique" FIELDS="token"/>
+            <KEY NAME="osrrefidfk" TYPE="foreign" FIELDS="osr_id_ref" REFTABLE="oauth_server_registry" REFFIELDS="id"/>
+            <KEY NAME="useridfk" TYPE="foreign" FIELDS="userid" REFTABLE="usr" REFFIELDS="id"/>
+          </KEYS>
+        </TABLE>
+       <TABLE NAME="external_services_logs" COMMENT="external services logs">
+          <FIELDS>
+            <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"/>
+            <FIELD NAME="timelogged" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"/>
+            <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="false" SEQUENCE="false" COMMENT="usr ref"/>
+            <FIELD NAME="externalserviceid" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"/>
+            <FIELD NAME="institution" TYPE="char" LENGTH="255" NOTNULL="true"/>
+            <FIELD NAME="protocol" TYPE="char" LENGTH="10" NOTNULL="true"/>
+            <FIELD NAME="auth" TYPE="char" LENGTH="10" NOTNULL="true"/>
+            <FIELD NAME="functionname" TYPE="char" LENGTH="200" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="timetaken" TYPE="number" LENGTH="10" DECIMALS="5" NOTNULL="true" UNSIGNED="false" SEQUENCE="false"/>
+            <FIELD NAME="uri" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="info" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="ip" TYPE="char" LENGTH="45" NOTNULL="false" SEQUENCE="false"/>
+          </FIELDS>
+          <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            <KEY NAME="useridfk" TYPE="foreign" FIELDS="userid" REFTABLE="usr" REFFIELDS="id"/>
+          </KEYS>
+          <INDEXES>
+            <INDEX NAME="externalserviceid" UNIQUE="false" FIELDS="externalserviceid"/>
+            <INDEX NAME="institution" UNIQUE="false" FIELDS="institution"/>
+            <INDEX NAME="functionname" UNIQUE="false" FIELDS="functionname"/>
+            <INDEX NAME="timelogged" UNIQUE="false" FIELDS="timelogged"/>
+          </INDEXES>
+        </TABLE>
+</TABLES>
+</XMLDB>

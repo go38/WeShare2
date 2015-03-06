@@ -1,0 +1,9 @@
+This requires phpunit 3.7 or later which is installed by running:
+
+make initcomposer
+
+Unit tests can be run by:
+
+make phpunit
+
+From the main directory of mahara (eg, outside htdocs)
