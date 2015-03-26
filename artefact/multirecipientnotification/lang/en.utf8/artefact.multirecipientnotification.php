@@ -30,16 +30,17 @@ $string['fromuser']             = 'From';
 $string['touser']               = 'To';
 
 // Notification Inbox URL Text
-$string['returnurltext']        = 'Reply';
-$string['replyurltext']         = 'Reply all';
+$string['reply']                = 'Reply';
+$string['replyall']             = 'Reply all';
 $string['linkindicator']        = '»';
 
 $string['labeloutbox1']          = 'Sent';
 $string['outboxdesc']         = 'Messages sent to other users';
 $string['labelinbox']           = 'Inbox';
-$string['inboxdesc']          = 'Messages received from Mahara system and other users';
+$string['inboxdesc1']          = 'Messages received from the system and other users';
 
 $string['nothingtorender']      = '';
+$string['replybuttonplaceholder'] = '...';
 
 $string['selectallread'] = 'All unread notifications';
 $string['selectalldelete'] = 'All notifications for deletion';

@@ -64,6 +64,7 @@ class PluginBlocktypeTextbox extends PluginBlocktype {
             list($commentcount, $comments) = ArtefactTypeComment::get_artefact_comments_for_view($artefact, $view, $instance->get('id'), true, $editing);
             $smarty->assign('commentcount', $commentcount);
             $smarty->assign('comments', $comments);
+            $smarty->assign('blockid', $instance->get('id'));
             return $smarty->fetch('blocktype:textbox:content.tpl');
         }
 
@@ -381,7 +382,7 @@ EOF;
                 'value' => '<div id="instconf_licensereadonly_display">' . (isset($artefact) ? render_license($artefact) : get_string('licensenone')) . '</div>',
             ),
             'allowcomments' => array(
-                'type'         => 'checkbox',
+                'type'         => 'switchbox',
                 'title'        => get_string('allowcomments', 'artefact.comment'),
                 'defaultvalue' => (!empty($artefact) ? $artefact->get('allowcomments') : 1),
             ),

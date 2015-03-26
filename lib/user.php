@@ -234,7 +234,7 @@ function general_account_prefs_form_elements($prefs) {
         'help' => true
     );
     $elements['wysiwyg'] = array(
-        'type' => 'checkbox',
+        'type' => 'switchbox',
         'defaultvalue' => (get_config('wysiwyg')) ? get_config('wysiwyg') == 'enable' : $prefs->wysiwyg,
         'title' => get_string('wysiwygdescr', 'account'),
         'help' => true,
@@ -252,7 +252,7 @@ function general_account_prefs_form_elements($prefs) {
         }
     }
     $elements['maildisabled'] = array(
-        'type' => 'checkbox',
+        'type' => 'switchbox',
         'defaultvalue' => $prefs->maildisabled,
         'title' => get_string('disableemail', 'account'),
         'help' => true,
@@ -337,16 +337,16 @@ function general_account_prefs_form_elements($prefs) {
     );
 
     $elements['addremovecolumns'] = array(
-        'type' => 'checkbox',
+        'type' => 'switchbox',
         'defaultvalue' => $prefs->addremovecolumns,
         'title' => get_string('showviewcolumns', 'account'),
         'help' => 'true'
     );
     // TODO: add a way for plugins (like blog!) to have account preferences
     $elements['multipleblogs'] = array(
-        'type' => 'checkbox',
+        'type' => 'switchbox',
         'title'=> get_string('enablemultipleblogs1' ,'account'),
-        'description' => get_string('enablemultipleblogsdescription', 'account'),
+        'description' => get_string('enablemultipleblogsdescription1', 'account'),
         'defaultvalue' => $prefs->multipleblogs,
     );
     if (get_config('showtagssideblock')) {
@@ -379,7 +379,7 @@ function general_account_prefs_form_elements($prefs) {
     );
     if (get_config('userscanhiderealnames')) {
         $elements['hiderealname'] = array(
-            'type'         => 'checkbox',
+            'type'         => 'switchbox',
             'title'        => get_string('hiderealname', 'account'),
             'description'  => get_string('hiderealnamedescription', 'account'),
             'defaultvalue' => $prefs->hiderealname,
@@ -387,7 +387,7 @@ function general_account_prefs_form_elements($prefs) {
     }
     if (get_config('homepageinfo')) {
         $elements['showhomeinfo'] = array(
-            'type' => 'checkbox',
+            'type' => 'switchbox',
             'defaultvalue' => $prefs->showhomeinfo,
             'title' => get_string('showhomeinfo2', 'account'),
             'description' => get_string('showhomeinfodescription1', 'account', hsc(get_config('sitename'))),
@@ -396,7 +396,7 @@ function general_account_prefs_form_elements($prefs) {
     }
     if (get_config('showprogressbar')) {
         $elements['showprogressbar'] = array(
-            'type' => 'checkbox',
+            'type' => 'switchbox',
             'defaultvalue' => $prefs->showprogressbar,
             'title' => get_string('showprogressbar', 'account'),
             'description' => get_string('showprogressbardescription', 'account', hsc(get_config('sitename'))),
@@ -416,16 +416,16 @@ function general_account_prefs_form_elements($prefs) {
     }
     if (get_config_plugin('artefact', 'file', 'resizeonuploadenable')) {
         $elements['resizeonuploaduserdefault'] = array(
-            'type'         => 'checkbox',
+            'type'         => 'switchbox',
             'title'        => get_string('resizeonuploaduserdefault1', 'account'),
-            'description'  => get_string('resizeonuploaduserdefaultdescription1', 'account'),
+            'description'  => get_string('resizeonuploaduserdefaultdescription2', 'account'),
             'defaultvalue' => $prefs->resizeonuploaduserdefault,
         );
     }
 
     if (get_config('userscandisabledevicedetection')) {
         $elements['devicedetection'] = array(
-            'type'         => 'checkbox',
+            'type'         => 'switchbox',
             'title'        => get_string('devicedetection', 'account'),
             'description'  => get_string('devicedetectiondescription', 'account'),
             'defaultvalue' => $prefs->devicedetection,
@@ -1029,10 +1029,11 @@ function display_name($user, $userto=null, $nameonly=false, $realname=false, $us
         return display_default_name($user);
     }
 
+    $nousernames = get_config('nousernames');
     $userto = get_user_for_display($userto);
     $user   = get_user_for_display($user);
 
-    $addusername = $username || !empty($userto->admin) || !empty($userto->staff);
+    $addusername = ($username && empty($nousernames)) || !empty($userto->admin) || !empty($userto->staff) || $userto === $user;
 
     // if they don't have a preferred name set, just return here
     if (empty($user->preferredname)) {
@@ -1110,7 +1111,7 @@ function full_name($user=null) {
         $user->deleted   = $USER->get('deleted');
     }
 
-    return isset($user->deleted) && $user->deleted ? get_string('deleteduser') : $user->lastname . ' ' . $user->firstname;
+	return isset($user->deleted) && $user->deleted ? get_string('deleteduser') : $user->lastname . ' ' . $user->firstname;
 }
 
 /**
@@ -1826,7 +1827,7 @@ function get_users_data($userids, $getviews=true) {
     $userid = $USER->get('id');
     $data = get_records_sql_assoc($sql, array_merge(array($userid, $userid, $userid, $userid), $userids));
     $allowhidename = get_config('userscanhiderealnames');
-    $showusername = get_config('searchusernames');
+    $showusername = !get_config('nousernames');
 
     $institutionstrings = get_institution_strings_for_users($userids);
     foreach ($data as &$record) {

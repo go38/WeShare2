@@ -26,11 +26,55 @@ $heading = get_string('webservices_title', 'auth.webservice');
 $webservice_menu = PluginAuthWebservice::menu_items(MENUITEM);
 $form = get_config_options_extended();
 
+$inlinejs = <<<JS
+    jQuery(function ($) {
+
+        function save_protos_switch(name) {
+            if (!$('#ajax_' + name).length) {
+                $('#activate_webservice_protos_' + name).append('<input id="ajax_' + name + '" type="hidden" name="ajax" value="1">');
+            }
+            $.post('index.php', $('#activate_webservice_protos_' + name).serialize());
+        }
+
+        $('#activate_webservices_enabled').change(function() {
+            // open the protocols fieldset
+            $('#activate_webservices_protos_pseudofieldset').closest('.pseudofieldset').removeClass('collapsed');
+            if ($(this).is(':checked')) {
+                // alert user to switch protocols on if none are active
+                if ($('#activate_webservices_protos_pseudofieldset').closest('.pseudofieldset').find('input:checkbox:checked').length == 0) {
+                    $('#activate_webservices_protos_pseudofieldset').closest('.pseudolegend').after('<div class="error">You need to enable at least one Protocol</div>');
+                }
+            }
+            else {
+                // turn all protocols off - not sure if we need this or should leave protocols on when master switch is off
+                $('#activate_webservices_protos_pseudofieldset').closest('.pseudofieldset').find('input:checkbox').attr('checked', false);
+                $('#activate_webservices').append('<input type="hidden" name="ajax" value="1">');
+            }
+            // save master switch form
+            $.post('index.php', $('#activate_webservices').serialize());
+        });
+        // saving the form when switching the protocols
+        $('#activate_webservice_protos_soap_enabled').change(function() {
+            save_protos_switch('soap');
+        });
+        $('#activate_webservice_protos_xmlrpc_enabled').change(function() {
+            save_protos_switch('xmlrpc');
+        });
+        $('#activate_webservice_protos_rest_enabled').change(function() {
+            save_protos_switch('rest');
+        });
+        $('#activate_webservice_protos_oauth_enabled').change(function() {
+            save_protos_switch('oauth');
+        });
+    });
+JS;
+
 $smarty = smarty(array(), array('<link rel="stylesheet" type="text/css" href="' . $THEME->get_url('style/webservice.css', false, 'auth/webservice') . '">'));
 $smarty->assign('form', $form);
 $smarty->assign('opened', param_alphanumext('open', ''));
 $smarty->assign('TERTIARYMENU', $webservice_menu);
 $smarty->assign('PAGEHEADING', $heading);
+$smarty->assign('INLINEJAVASCRIPT', $inlinejs);
 $smarty->assign('pagedescription', get_string('webservicesconfigdesc', 'auth.webservice'));
 $smarty->display('auth:webservice:configform.tpl');
 
@@ -56,14 +100,23 @@ function activate_webservices_submit(Pieform $form, $values) {
         }
         external_reload_webservices();
     }
+    if (!empty($_POST['ajax'])) {
+        $protos = array('soap','xmlrpc','rest','oauth');
+        foreach ($protos as $proto) {
+            set_config('webservice_'.$proto.'_enabled', 0);
+        }
+        exit;
+    }
     redirect('/webservice/admin/index.php?open=activate_webservices');
 }
 
 function activate_webservice_proto_submit(Pieform $form, $values) {
-
     $enabled = $values['enabled'] ? 0 : 1;
     $proto = $values['protocol'];
     set_config('webservice_'.$proto.'_enabled', $enabled);
+    if (!empty($_POST['ajax'])) {
+        exit;
+    }
     redirect('/webservice/admin/index.php?open=activate_webservices_protos');
 }
 
@@ -108,8 +161,8 @@ function webservices_token_submit(Pieform $form, $values) {
     global $SESSION, $USER;
 
     if ($values['action'] == 'generate') {
-        if (isset($values['userid'])) {
-            $dbuser = get_record('usr', 'id', $values['userid']);
+        if (isset($values['userid'][0])) {
+            $dbuser = get_record('usr', 'id', $values['userid'][0]);
             if (!empty($dbuser)) {
                 $services = get_records_array('external_services', 'restrictedusers', 0);
                 if (empty($services)) {
@@ -155,8 +208,8 @@ function webservices_user_submit(Pieform $form, $values) {
     global $SESSION, $USER;
 
     if ($values['action'] == 'add') {
-        if (isset($values['userid'])) {
-            $dbuser = get_record('usr', 'id', $values['userid']);
+        if (isset($values['userid'][0])) {
+            $dbuser = get_record('usr', 'id', $values['userid'][0]);
             if ($auth_instance = webservice_validate_user($dbuser)) {
                 // make sure that this account is not already in use
                 $existing = get_record('external_services_users', 'userid', $dbuser->id);
@@ -231,17 +284,13 @@ function webservices_master_switch_form() {
                                 'successcallback' => 'activate_webservices_submit',
                                 'renderer' => 'div',
                                 'jsform' => false,
+                                'checkdirtychange' => false,
                                 'elements' => array(
                                     'plugintype' => array('type' => 'hidden', 'value' => 'auth'),
                                     'type' => array('type' => 'hidden', 'value' => 'webservice'),
                                     'pluginname' => array('type' => 'hidden', 'value' => 'webservice'),
                                     'enabled' => array('type' => 'switchbox',
                                         'value' => $enabled,
-                                        'on_callback' => 'switchbox_submit',
-                                        'off_callback' => 'switchbox_submit',
-                                        'on_label' => get_string('enabled'),
-                                        'off_label' => get_string('disabled'),
-                                        'wrapperclass' => 'switch-wrapper-inline',
                                         'labelhtml' => get_string('control_webservices', 'auth.webservice'),
                                     ),
                                 ),
@@ -261,7 +310,7 @@ function webservices_master_switch_form() {
 function webservices_protocol_switch_form() {
     // enable/disable separate protocols of SOAP/XML-RPC/REST
     $elements = array();
-    $elements['label'] = array('title' => ' ', 'type' => 'html', 'value' => '<span class="heading">' . get_string('protocol', 'auth.webservice') . '</span>');
+    $elements['label'] = array('title' => ' ', 'type' => 'html', 'value' => '<div class="title">' . get_string('protocol', 'auth.webservice') . '</div>');
 
     foreach (array('soap', 'xmlrpc', 'rest', 'oauth') as $proto) {
         $enabled = (get_config('webservice_' . $proto . '_enabled') || 0);
@@ -275,6 +324,7 @@ function webservices_protocol_switch_form() {
             'renderer'        => 'div',
             'successcallback' => 'activate_webservice_proto_submit',
             'jsform'          => false,
+            'checkdirtychange' => false,
             'elements' => array(
 
                 'plugintype' => array('type' => 'hidden', 'value' => 'auth'),
@@ -283,11 +333,6 @@ function webservices_protocol_switch_form() {
                 'protocol'   => array('type' => 'hidden', 'value' => $proto),
                 'enabled'    => array('type' => 'switchbox',
                                       'value' => $enabled,
-                                      'on_callback' => 'switchbox_submit',
-                                      'off_callback' => 'switchbox_submit',
-                                      'on_label' => get_string('enabled'),
-                                      'off_label' => get_string('disabled'),
-                                      'wrapperclass' => 'switch-wrapper-inline',
                                       'labelhtml' => get_string($proto, 'auth.webservice') . ': ',
                                       ),
             ),
@@ -313,34 +358,45 @@ function service_fg_edit_form() {
         'elements'   => array(
                         'servicegroup' => array(
                             'title' => ' ',
-                            'class' => 'heading',
+                            'datatable' => true,
                             'type'  => 'html',
                             'value' => get_string('service', 'auth.webservice'),
                         ),
                         'component' => array(
                             'title' => ' ',
+                            'datatable' => true,
                             'type'  => 'html',
                             'value' => get_string('component', 'auth.webservice'),
                         ),
                         'enabled' => array(
                             'title' => ' ',
+                            'datatable' => true,
                             'type'  => 'html',
                             'value' => get_string('enabled'),
                         ),
                         'restricted' => array(
                             'title' => ' ',
+                            'datatable' => true,
                             'type'  => 'html',
                             'value' => get_string('restrictedusers', 'auth.webservice'),
                         ),
                         'tokenusers' => array(
                             'title' => ' ',
+                            'datatable' => true,
                             'type'  => 'html',
                             'value' => get_string('fortokenusers', 'auth.webservice'),
                         ),
                         'functions' => array(
                             'title' => ' ',
+                            'datatable' => true,
                             'type'  => 'html',
                             'value' => get_string('functions', 'auth.webservice'),
+                        ),
+                        'actions' => array(
+                            'title' => ' ',
+                            'datatable' => true,
+                            'type'  => 'html',
+                            'value' => '',
                         ),
                     ),
         );
@@ -432,10 +488,11 @@ function service_fg_edit_form() {
                                 ,
                 'type'         => 'html',
                 'key'          => $service->name,
-                'class'        => 'webserviceconfigcontrols',
+                'class'        => 'webserviceconfigcontrols btns2 right',
             );
         }
     }
+
     $pieform = new pieform($form);
     return $pieform->build(false) . '<div class="function_add">' .
                             pieform(array(
@@ -474,39 +531,51 @@ function service_tokens_edit_form() {
         'elements'   => array(
                         'token' => array(
                             'title' => ' ',
-                            'class' => 'heading',
+                            'datatable'  => true,
                             'type'  => 'html',
                             'value' => get_string('token', 'auth.webservice'),
                         ),
                         'institution' => array(
                             'title' => ' ',
+                            'datatable'  => true,
                             'type'  => 'html',
                             'value' => get_string('institution'),
                         ),
                         'username' => array(
                             'title' => ' ',
+                            'datatable'  => true,
                             'type'  => 'html',
                             'value' => get_string('username', 'auth.webservice'),
                         ),
                         'servicename' => array(
                             'title' => ' ',
+                            'datatable'  => true,
                             'type'  => 'html',
                             'value' => get_string('servicename', 'auth.webservice'),
                         ),
                         'enabled' => array(
                             'title' => ' ',
+                            'datatable'  => true,
                             'type'  => 'html',
                             'value' => get_string('enabled'),
                         ),
                         'wssigenc' => array(
                             'title' => ' ',
+                            'datatable'  => true,
                             'type'  => 'html',
                             'value' => get_string('titlewssigenc', 'auth.webservice'),
                         ),
                         'functions' => array(
                             'title' => ' ',
+                            'datatable'  => true,
                             'type'  => 'html',
                             'value' => get_string('functions', 'auth.webservice'),
+                        ),
+                        'actions' => array(
+                            'title' => ' ',
+                            'datatable'  => true,
+                            'type'  => 'html',
+                            'value' => '',
                         ),
                     ),
         );
@@ -611,9 +680,13 @@ function service_tokens_edit_form() {
                                 ,
                 'type'         => 'html',
                 'key'          => $token->token,
-                'class'        => 'webserviceconfigcontrols',
+                'class'        => 'webserviceconfigcontrols btns2 right',
             );
         }
+    }
+    else {
+        // no results so hide headings
+        $form['elements'] = array();
     }
 
     $username = '';
@@ -640,10 +713,13 @@ function service_tokens_edit_form() {
                                         'type' => 'autocomplete',
                                         'title' => get_string('username') . ': ',
                                         'ajaxurl' => get_config('wwwroot') . 'webservice/admin/users.json.php',
-                                        'multiple' => false,
+                                        'multiple' => true,
                                         'allowclear' => true,
                                         'ajaxextraparams' => array(),
-                                        'width' => '400px',
+                                        'extraparams' => array(
+                                            'maximumSelectionSize' => 1
+                                        ),
+                                        'width' => '280px',
                                     ),
                                     'action'     => array('type' => 'hidden', 'value' => 'generate'),
                                     'submit'     => array(
@@ -673,34 +749,45 @@ function service_users_edit_form() {
         'elements'   => array(
                         'username' => array(
                             'title' => ' ',
-                            'class' => 'heading',
+                            'datatable'  => true,
                             'type'  => 'html',
                             'value' => get_string('username', 'auth.webservice'),
                         ),
                         'institution' => array(
                             'title' => ' ',
+                            'datatable'  => true,
                             'type'  => 'html',
                             'value' => get_string('institution'),
                         ),
                         'servicename' => array(
                             'title' => ' ',
+                            'datatable'  => true,
                             'type'  => 'html',
                             'value' => get_string('servicename', 'auth.webservice'),
                         ),
                         'enabled' => array(
                             'title' => ' ',
+                            'datatable'  => true,
                             'type'  => 'html',
                             'value' => get_string('enabled'),
                         ),
                         'wssigenc' => array(
                             'title' => ' ',
+                            'datatable'  => true,
                             'type'  => 'html',
                             'value' => get_string('titlewssigenc', 'auth.webservice'),
                         ),
                         'functions' => array(
                             'title' => ' ',
+                            'datatable'  => true,
                             'type'  => 'html',
                             'value' => get_string('functions', 'auth.webservice'),
+                        ),
+                        'actions' => array(
+                            'title' => ' ',
+                            'datatable'  => true,
+                            'type'  => 'html',
+                            'value' => '',
                         ),
                     ),
         );
@@ -804,6 +891,10 @@ function service_users_edit_form() {
             );
         }
     }
+    else {
+        // no results so hide headings
+        $form['elements'] = array();
+    }
 
     $username = '';
     if ($user  = param_integer('user', 0)) {
@@ -829,10 +920,13 @@ function service_users_edit_form() {
                                         'type' => 'autocomplete',
                                         'title' => get_string('username') . ': ',
                                         'ajaxurl' => get_config('wwwroot') . 'webservice/admin/users.json.php',
-                                        'multiple' => false,
+                                        'multiple' => true,
                                         'allowclear' => true,
                                         'ajaxextraparams' => array(),
-                                        'width' => '400px',
+                                        'extraparams' => array(
+                                            'maximumSelectionSize' => 1
+                                        ),
+                                        'width' => '280px',
                                     ),
                                     'action'     => array('type' => 'hidden', 'value' => 'add'),
                                     'submit'     => array(
@@ -885,7 +979,7 @@ function get_config_options_extended() {
                                 'elements' =>  array(
                                                 'protos_help' =>  array(
                                                 'type' => 'html',
-                                                'value' => '<div>' . get_string('manage_protocols', 'auth.webservice') . '</div>',
+                                                'value' => '<div><p>' . get_string('manage_protocols', 'auth.webservice') . '</p></div>',
                                                 ),
                                                 'enablewebserviceprotos' =>  array(
                                                 'type' => 'html',
@@ -904,26 +998,26 @@ function get_config_options_extended() {
                                 'elements' =>  array(
                                                 'protos_help' =>  array(
                                                 'type' => 'html',
-                                                'value' => '<div>' . get_string('manage_certificates', 'auth.webservice', get_config('wwwroot') . 'admin/site/networking.php') . '</div>',
+                                                'value' => '<div><p>' . get_string('manage_certificates', 'auth.webservice', get_config('wwwroot') . 'admin/site/networking.php') . '</p></div>',
                                                 ),
 
                                                 'pubkey' => array(
                                                     'type'         => 'html',
-                                                    'value'        => '<div>' . get_string('publickey','admin') . '</div>' .
-                                                                      '<div>' . get_string('publickeydescription2', 'admin', 365) . '</div>' .
+                                                    'value'        => '<div class="title">' . get_string('publickey','admin') . '</div>' .
+                                                                      '<div class="detail">' . get_string('publickeydescription2', 'admin', 365) . '</div>' .
                                                                       '<pre style="font-size: 0.7em; white-space: pre;">' . $openssl->certificate . '</pre>'
                                                 ),
                                                 'sha1fingerprint' => array(
                                                     'type'         => 'html',
-                                                    'value'        => '<div>' . get_string('sha1fingerprint', 'auth.webservice', $openssl->sha1_fingerprint) . '</div>',
+                                                    'value'        => '<div><p>' . get_string('sha1fingerprint', 'auth.webservice', $openssl->sha1_fingerprint) . '</p></div>',
                                                 ),
                                                 'md5fingerprint' => array(
                                                     'type'         => 'html',
-                                                    'value'        => '<div>' . get_string('md5fingerprint', 'auth.webservice', $openssl->md5_fingerprint) . '</div>',
+                                                    'value'        => '<div><p>' . get_string('md5fingerprint', 'auth.webservice', $openssl->md5_fingerprint) . '</p></div>',
                                                 ),
                                                 'expires' => array(
                                                     'type'         => 'html',
-                                                    'value'        => '<div>' . get_string('publickeyexpireson','auth.webservice', format_date($openssl->expires)) . '</div>'
+                                                    'value'        => '<div><p>' . get_string('publickeyexpireson','auth.webservice', format_date($openssl->expires)) . '</p></div>'
                                                 ),
                                             ),
                                 'collapsible' => true,
@@ -937,7 +1031,7 @@ function get_config_options_extended() {
                                 'legend' => get_string('servicefunctiongroups', 'auth.webservice'),
                                 'elements' => array(
                                     'sfgdescription' => array(
-                                        'value' => '<div>' . get_string('sfgdescription', 'auth.webservice') . '</div>'
+                                        'value' => '<div><p>' . get_string('sfgdescription', 'auth.webservice') . '</p></div>'
                                     ),
                                     'webservicesservicecontainer' => array(
                                         'type'         => 'html',
@@ -956,7 +1050,7 @@ function get_config_options_extended() {
                                 'legend' => get_string('servicetokens', 'auth.webservice'),
                                 'elements' => array(
                                     'stdescription' => array(
-                                        'value' => '<div>' . get_string('stdescription', 'auth.webservice') . '</div>'
+                                        'value' => '<div><p>' . get_string('stdescription', 'auth.webservice') . '</p></div>'
                                     ),
                                     'webservicestokenscontainer' => array(
                                         'type'         => 'html',
@@ -974,7 +1068,7 @@ function get_config_options_extended() {
                                 'legend' => get_string('manageserviceusers', 'auth.webservice'),
                                 'elements' => array(
                                     'sudescription' => array(
-                                        'value' => '<div>' . get_string('sudescription', 'auth.webservice') . '</div>'
+                                        'value' => '<div><p>' . get_string('sudescription', 'auth.webservice') . '</p></div>'
                                     ),
                                     'webservicesuserscontainer' => array(
                                         'type'         => 'html',

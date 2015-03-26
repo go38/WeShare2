@@ -3978,8 +3978,8 @@ class View {
                     OR c.name $like '%' || ? || '%' OR c.description $like '%' || ? || '%' ";
                 array_push($whereparams, $query, $query);
             }
-            if (get_config('searchusernames')) {
-                // If the site setting 'Search usernames' is enabled, allow searching by username.
+            if ($admin || $USER->get('staff') || !get_config('nousernames')) {
+                // If the site setting 'Never display usernames' is disabled, allow searching by username.
                 $where .= "
                     OR qu.username $like '%' || ? || '%' ";
                 array_push($whereparams, $query);
@@ -4401,7 +4401,7 @@ class View {
             $ordersql = ' ORDER BY ' . $orderby . ', v.id';
         }
         $viewdata = get_records_sql_assoc('
-            SELECT DISTINCT v.id, v.title, v.startdate, v.stopdate, v.description, v.group, v.owner, v.ownerformat, v.institution, v.urlid, v.mtime '
+            SELECT DISTINCT v.id, v.title, v.startdate, v.stopdate, v.description, v.group, v.owner, v.ownerformat, v.institution, v.urlid, v.ctime, v.mtime '
                 . $from
                 . $where
                 . $ordersql,

@@ -152,6 +152,8 @@ function pieform_element_filebrowser(Pieform $form, $element) {
     $fileliststr = json_encode($filedata);
 
     $smarty->assign('prefix', $prefix);
+    $accepts = isset($element['accept']) ? 'accept="' . Pieform::hsc($element['accept']) . '"' : '';
+    $smarty->assign('accepts', $accepts);
 
     $initjs = "{$prefix} = new FileBrowser('{$prefix}', {$folder}, {$configstr}, config);
 {$prefix}.filedata = {$fileliststr};";
@@ -782,6 +784,17 @@ function pieform_element_filebrowser_doupdate(Pieform $form, $element) {
 
 }
 
+function Xbasename($file= null) {
+    if($file=== null || strlen($file)<= 0) {
+        return null;
+    }
+  
+    $file= explode('?', $file);
+    $file= explode('/', $file[0]);
+    $basename= $file[count($file)-1];
+
+    return $basename;  
+}
 
 function pieform_element_filebrowser_upload(Pieform $form, $element, $data) {
     global $USER;
@@ -867,7 +880,7 @@ function pieform_element_filebrowser_upload(Pieform $form, $element, $data) {
     else {
         $originalname = $_FILES['userfile']['name'];
     }
-    $originalname = $originalname ? basename($originalname) : get_string('file', 'artefact.file');
+    $originalname = $originalname ? Xbasename($originalname) : get_string('file', 'artefact.file');
     $data->title = ArtefactTypeFileBase::get_new_file_title($originalname, $parentfolder, $data->owner, $group, $institution);
 
     // Overwrite image file with resized version if required
@@ -1487,6 +1500,11 @@ function pieform_element_filebrowser_get_headdata($element) {
         $headdata[] = '<script type="application/javascript" src="' . get_config('wwwroot') . 'js/dropzone/dropzone.min.js"></script>';
         $headdata[] = '<link href="' . get_config('wwwroot') . 'js/dropzone/css/dropzone.css" type="text/css" rel="stylesheet">';
         $headdata[] = '<script type="application/javascript" src="' . get_config('wwwroot') . 'artefact/file/js/filedropzone.js"></script>';
+    }
+    if ($element['config']['edit']) {
+        // Add switchbox css if filebrowser is allowed to edit
+        require_once(get_config('docroot') . 'lib/form/elements/switchbox.php');
+        $headdata[] = join(' ', pieform_element_switchbox_get_headdata($element));
     }
     $strings = PluginArtefactFile::jsstrings('filebrowser');
     $jsstrings = '';

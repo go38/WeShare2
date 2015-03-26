@@ -249,19 +249,31 @@ function sendjsonrequest(script, data, rtype, successcallback, errorcallback, qu
 
     d.addCallbacks(function (result) {
         document.documentElement.style.cursor = '';
-        var data = evalJSONRequest(result);
+        var data;
+        try {
+            data = jQuery.parseJSON(result.responseText);
+        }
+        catch (e) {
+            logError('sendjsonrequest() received invalid JSON');
+            processingStop();
+            errorcallback();
+            return;
+        }
+
         var errtype = false;
         if (!data.error) { 
             errtype = 'ok';
         }
         else if (data.error == 'local') {
             errtype = 'error';
+            errorcallback();
         }
         else {
             logWarning('invoking globalErrorHandler(', data, this, arguments, ')');
             // Trying something ninja. The call failed, but in the event that the global error
             // handler can recover, maybe it can be called
             globalErrorHandler(data);
+            errorcallback();
         }
         if (errtype) {
             if (typeof(data.message) == 'string') {
