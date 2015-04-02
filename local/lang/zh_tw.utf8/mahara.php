@@ -161,6 +161,7 @@ $string['administration'] = '管理';
 $string['adminofinstitutions'] = '%s的管理';
 $string['adminphpuploaderror'] = '上傳檔案錯誤可能被你的系統配置所引發。';
 $string['after'] = '之後';
+$string['alignment'] = '對齊';
 $string['allonline'] = '顯示所有線上用戶';
 $string['allowpublicaccess'] = '允許公開(免登入) 存取';
 $string['alltags'] = '所有標籤';
@@ -174,6 +175,7 @@ $string['artefactnotpublishable'] = '作品元件 %s 沒有發佈在頁面 %s �
 $string['artefactnotrendered'] = '作品元件不會呈現';
 $string['artefacts'] = '作品元件';
 $string['at'] = '在';
+$string['attachedimage'] = '附加圖檔';
 $string['attachment'] = '附件';
 $string['authentication'] = '認證';
 $string['back'] = '返回';
@@ -469,6 +471,11 @@ $string['dashboarddescription'] = '儀表板頁面是當您登入時在首頁看
 $string['date'] = '日期';
 $string['dateformatguide'] = '使用格式 YYYY/MM/DD';
 $string['dateofbirthformatguide'] = '使用格式 YYYY/MM/DD';
+$string['datepicker_currentStatus'] = '顯示目前月份';
+$string['datepicker_currentText'] = '現在';
+$string['datepicker_minuteText'] = '分';
+$string['datepicker_amNames'] = "['上午', 'AM']";
+$string['datepicker_pmNames'] = "['下午', 'PM']";
 $string['datetimeformatguide'] = '使用格式 YYYY/MM/DD HH:MM';
 $string['day'] = '天';
 $string['days'] = '天';
@@ -482,6 +489,7 @@ $string['deleteitem'] = '刪除';
 $string['deletespecific'] = '刪除 "%s"';
 $string['deletetag'] = '刪除 <a href="%s">%s</a>';
 $string['deletetagdescription'] = '從所有學習檔案項目中移除這個標籤';
+$string['descending'] = '遞減';
 $string['description'] = '描述';
 $string['disable'] = '停用';
 $string['disabled'] = '已停用';
@@ -631,6 +639,7 @@ $string['licensemandatoryerror'] = '授權的欄位是強制要有的。';
 $string['licensenocustomerror'] = '這個網站沒有一個允許的授權方式。';
 $string['licensenone'] = '未選擇';
 $string['licenseother'] = '其他授權方式(輸入網址)';
+$string['licenseotherurl'] = '輸入網址';
 $string['licensingadvanced'] = '進階授權';
 $string['licensor'] = '授權者';
 $string['licensordesc'] = '內容的原始授權者';
@@ -824,6 +833,7 @@ $string['setblocktitle'] = '設定區塊標題';
 $string['settings'] = '設定';
 $string['settingssaved'] = '設定已儲存';
 $string['settingssavefailed'] = '儲存設定失敗';
+$string['settingsspecific'] = '"%s" 的設定';
 $string['sharedetail'] = '在您掌控的地方分享您的成果和發展';
 $string['sharenetwork'] = '分享與網絡';
 $string['sharenetworkdescription'] = '<br>控管您的隱私。';
@@ -866,6 +876,7 @@ $string['termsandconditions'] = '使用條款';
 $string['theme'] = '佈景主題';
 $string['thisistheprofilepagefor'] = '這是 %s 的個人檔案頁面';
 $string['topicsimfollowing'] = '我熱衷的話題';
+$string['true'] = '真';
 $string['unknownerror'] = '出現不明錯誤 (0x20f91a0)';
 $string['unreadmessage'] = '未讀取訊息';
 $string['unreadmessages'] = '未讀取訊息';
@@ -911,3 +922,15 @@ $string['youraccounthasbeenunsuspendedtext2'] = '您在 %s 的帳戶已恢復。
 $string['yournewpassword'] = '您的新密碼必須至少六個字元長，而且至少要有一個數字和兩個字母。
 您的新密碼。密碼必須至少6個字元長。密碼有區分大小寫的，與您的用戶名稱必須是不相同的。<br/>為了獲得良好的安全性，可以考慮使用通關密語。通關密語不是一個字而是一個句子。可考慮使用空格分隔兩個（或更多個）您最喜愛的句子或是東西。';
 $string['yournewpasswordagain'] = '再一次輸入您的新密碼';
+$string['nusers'] = array(
+    '1 位用戶',
+    '%s 位用戶',
+);
+$string['progressbargenerictask'] = array(
+    0 => '增加一個: %2$s',
+    1 => '增加%d個: %s'
+);
+$string['nitems'] = array(
+    '%s 項',
+    '%s 項',
+);
