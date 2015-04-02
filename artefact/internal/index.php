@@ -128,8 +128,8 @@ foreach ( $element_list as $element => $type ) {
     }
 
 }
-if ($items['firstname']) {
-    $items['firstname']['autofocus'] = true;
+if ($items['preferredname']) {
+    $items['preferredname']['autofocus'] = true;
 }
 if (isset($items['socialprofile']) && $items['socialprofile']) {
     $items['socialprofile']['title'] = null;
@@ -149,7 +149,7 @@ $elements = array(
         'type' => 'fieldset',
         'legend' => get_string('aboutme', 'artefact.internal'),
         'class' => $fieldset != 'aboutme' ? 'collapsed' : '',
-        'elements' => get_desired_fields($items, array('firstname', 'lastname', 'studentid', 'preferredname', 'introduction'), 'about'),
+        'elements' => get_desired_fields($items, array( 'lastname','firstname', 'studentid', 'preferredname', 'introduction'), 'about'),
     ),
     'contact' => array(
         'type' => 'fieldset',
@@ -295,8 +295,8 @@ function profileform_submit(Pieform $form, $values) {
                         (object)array(
                             'id'            => $USER->get('id'),
                             'username'      => $USER->get('username'),
-                            'firstname'     => $USER->get('firstname'),
-                            'lastname'      => $USER->get('lastname'),
+							'firstname'     => $USER->get('firstname'),  
+							'lastname'      => $USER->get('lastname'),                       
                             'preferredname' => $USER->get('preferredname'),
                             'admin'         => $USER->get('admin'),
                             'staff'         => $USER->get('staff'),
