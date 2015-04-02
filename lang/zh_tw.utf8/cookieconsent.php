@@ -26,4 +26,5 @@
 
 defined('INTERNAL') || die();
 
-$string['cookietypessocial'] = '社群媒體';
+$string['cookietypessocial'] = '社群網絡';
+$string['socialDefaultTitle'] = '社群媒體';
