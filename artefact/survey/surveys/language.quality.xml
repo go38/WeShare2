@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey name="language.quality">
+	<title
+		sl.utf8="Kakovost jezika"
+		en.utf8="Language quality"
+		zh_tw.utf8="語言素質"
+	/>
+	<description
+		sl.utf8=""
+		en.utf8=""
+	/>
+	<instructions
+		sl.utf8="Pazljivo preberite vsako izjavo. Če se z izjavo strinjate, obkljukajte ustrezno polje."
+		en.utf8="Read each statement carefully. If you agree with the statement, than tick the appropriate checkbox."
+	/>
+	<translator
+		sl.utf8=""
+		en.utf8=""
+	/>
+	<questions sections="separated">
+		<section name="a1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="A1 - Vstopna raven"
+				en.utf8="A1 - Breakthrough"
+		>
+		</section>
+		<section name="a2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="A2 – Vmesna raven"
+				en.utf8="A2 – Waystage"
+		>
+			<question type="checkbox" id="q1"
+				sl.utf8="Znam se razumljivo izražati, tako da uporabljam naučene besedne zveze in posamezne izraze."
+				en.utf8="I can make myself understood using memorised phrases and single expressions."
+			/>
+			<question type="checkbox" id="q2"
+				sl.utf8="Skupine besed znam povezovati s preprostimi vezniki, kot so »in«, »ampak«, »ker«."
+				en.utf8="I can link groups of words with simple connectors like »and«, »but« and »because«."
+			/>
+			<question type="checkbox" id="q3"
+				sl.utf8="Znam pravilno uporabljati enostavne stavčne oblike."
+				en.utf8="I can use some simple structures correctly."
+			/>
+			<question type="checkbox" id="q4"
+				sl.utf8="Znano besedišče mi zadostuje v preprostih vsakdanjih okoliščinah."
+				en.utf8="I have a sufficient vocabulary for coping with simple everyday situations."
+			/>
+		</section>
+		<section name="b1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="B1 – Raven sporazumevalnega praga"
+				en.utf8="B1 – Threshold"
+		>
+			<question type="checkbox" id="q5"
+				sl.utf8="Znam posredovati preproste, neposredno pomembne informacije in izraziti tisto, kar se mi zdi najpomembnejše."
+				en.utf8="I can convey simple information of immediate relevance, getting across which point I feel is most important."
+			/>
+			<question type="checkbox" id="q6"
+				sl.utf8="Moje besedišče je dovolj obširno, da se lahko pogovarjam o vsakdanjih temah, kot so družina, konjički, delo, potovanja in dnevni dogodki."
+				en.utf8="I have a sufficient vocabulary to express myself with some paraphrasing on most topics pertinent to my everyday life such as family, hobbies and interests, work, travel, and current events."
+			/>
+			<question type="checkbox" id="q7"
+				sl.utf8="V znanih predvidljivih okoliščinah se znam razumljivo in pravilno izražati."
+				en.utf8="I can express myself reasonably accurately in familiar, predictable situations."
+			/>
+			<question type="checkbox" id="q8"
+				sl.utf8="Govoriti in pisati znam dovolj dobro, da se sporazumem v vsakdanjem življenju."
+				en.utf8="I can talk and write well enough to communicate in everyday life."
+			/>
+		</section>
+		<section name="b2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="B2 – Višja raven"
+				en.utf8="B2 – Vantage"
+		>
+			<question type="checkbox" id="q9"
+				sl.utf8="Tekoče in v enakomernem tempu znam govoriti dalj časa. Tudi če iščem pravo besedo ali stavčno zvezo, ne nastajajo daljši odmori."
+				en.utf8="I can produce stretches of language with a fairly even tempo; although I can be hesitant as I search for patterns and expressions, there are few noticeably long pauses."
+			/>
+			<question type="checkbox" id="q10"
+				sl.utf8="Natančno znam posredovati podrobne informacije."
+				en.utf8="I can pass on detailed information reliably."
+			/>
+			<question type="checkbox" id="q11"
+				sl.utf8="Moj besedni zaklad zadošča, da se lahko izražam na svojem interesnem področju, pa tudi o večini splošnih tem."
+				en.utf8="I have sufficient vocabulary to express myself on matters connected to my field on most general topics."
+			/>
+			<question type="checkbox" id="q12"
+				sl.utf8="Dokaj pravilno se znam sporazumevati in popraviti napake, če so pripeljale do nesporazuma."
+				en.utf8="I can communicate with reasonable accuracy and can correct mistakes if they have led to misunderstandings."
+			/>
+		</section>
+		<section name="c1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="C1 – Raven učinkovitosti"
+				en.utf8="C1 – Effectiveness"
+		>
+			<question type="checkbox" id="q13"
+				sl.utf8="Skoraj brez napora se znam tekoče in spontano izražati. Moje tekoče govorjenje lahko ovira le vsebinsko zelo zahtevna tematika."
+				en.utf8="I can express myself fluently and spontaneously, almost effortlessly. Only a conceptually difficult subject can hinder a natural, smooth flow of language."
+			/>
+			<question type="checkbox" id="q14"
+				sl.utf8="Znam oblikovati jezikovno jasen, tekoč, tehtno zgrajen govor, s katerim dokazujem, da znam pametno razvijati misli."
+				en.utf8="I can produce clear, smoothly-flowing, well-structured speech, showing control over ways of developing what I want to say in order to link both my ideas and my expression of them into coherent text."
+			/>
+			<question type="checkbox" id="q15"
+				sl.utf8="Imam bogato besedišče, to pa mi omogoča, da izraz, ki se ga trenutno ne spomnim ali ga ne poznam, nadomestim z opisom; redko sem v zadregi zaradi iskanja ustreznega izraza in večinoma nimam težav pri natančnem izražanju."
+				en.utf8="I have a good command of a broad vocabulary allowing gaps to be readily overcome by using paraphrasing; I rarely have to search obviously for expressions or compromise on saying exactly what I want to."
+			/>
+			<question type="checkbox" id="q16"
+				sl.utf8="Lahko se izražam slovnično pravilno, napake so redke in jih je težko opaziti."
+				en.utf8="I can consistently maintain a high degree of grammatical accuracy; errors are rare and difficult to spot."
+			/>
+		</section>
+		<section name="c2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="C2 – Raven mojstrstva"
+				en.utf8="C2 – Mastery"
+		>
+			<question type="checkbox" id="q17"
+				sl.utf8="Izražam se naravno in zanesljivo, samo včasih moram na kratko razmisliti, da najdem pravo besedo."
+				en.utf8="I can express myself naturally and effortlessly; I only need to pause occasionally in order to select precisely the right words."
+			/>
+			<question type="checkbox" id="q18"
+				sl.utf8="Natančnejše pomenske odtenke znam precej zanesljivo izraziti z uporabo široke palete jezikovnih sredstev, s katerimi podkrepim ali omilim svoje izjave."
+				en.utf8="I can convey finer shades of meaning precisely by using, with reasonable accuracy, a wide range of expressions to qualify statements and pinpoint the extent to which something is the case."
+			/>
+			<question type="checkbox" id="q19"
+				sl.utf8="Dobro poznam pogovorne in idiomatske izraze. Pri tem se zavedam njihovih prikritih pomenov."
+				en.utf8="I have a good command of idiomatic expressions and colloquialisms with an awareness of implied meaning and meaning by association."
+			/>
+			<question type="checkbox" id="q20"
+				sl.utf8="Slovnično pravilno govorim tudi takrat, ko je moje izražanje zahtevnejše ali pa je moja pozornost usmerjena kam drugam."
+				en.utf8="I can consistently maintain grammatical control of complex language even when my attention is otherwise engaged."
+			/>
+		</section>
+	</questions>
+</survey>

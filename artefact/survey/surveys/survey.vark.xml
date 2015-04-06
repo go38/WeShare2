@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey name="survey.vark" version="2011020600" author="Neil Fleming" url="http://www.vark-learn.com/">
+	<title
+		en.utf8="VARK Learning Styles"
+		sl.utf8="VARK Učni slogi"
+		zh_tw.utf8="VARK 學習型態"
+	/>
+	<description
+		en.utf8="&lt;p&gt;Learning styles are simply different approaches or ways of learning. They involve educating methods which are particular to an individual and that are presumed to allow that individual to learn best. One of the most common and widely-used categorizations of the various types of learning styles is Fleming's VARK model which expanded upon earlier Neuro-linguistic programming (VAK) models:&lt;ul&gt;&lt;li&gt;&lt;b&gt;Visual learners.&lt;/b&gt; They have a preference for seeing (think in pictures; visual aids such as overhead slides, diagrams, handouts, etc.).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Auditory learners.&lt;/b&gt; They learn best through listening (lectures, discussions, tapes, etc.).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Reading/Writing-preference learners.&lt;/b&gt; They learn best through reading and writing.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Kinesthetic learners&lt;/b&gt; or &lt;b&gt;tactile learners.&lt;/b&gt; They prefer to learn via experience - moving, touching, and doing (active exploration of the world; science projects; experiments, etc.).&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;"
+		sl.utf8="&lt;p&gt;Učni slogi so preprosto različni pristopi ali poti učenja. Vključujejo izobraževalne metode, lastne posamezniku, za katere predpostavimo, da posamezniku omogočajo najučinkovitejše učenje. Ena izmed najbolj pogostih in uporabljanih razvstitev različnih tipov učnih slogov je Flemingov model VARK, ki je razširitev zgodnejših modelov neuro-lingvističnega programiranja (VAK):&lt;ul&gt;&lt;li&gt;&lt;b&gt;Vizualni tip učečega.&lt;/b&gt; Najbolje se učijo z gledanjem (razmišljajo v slikah, potrebujejo vizualne pripomočke, kot so prosojnice, diagrami, izročki, itd.).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Slušni tip učečega.&lt;/b&gt; Najbolje se učijo s poslušanjem (predavanj, pogovorov in razgovorov, posnetkov, itd.).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Učeči s prednostno izbiro branja/pisanja.&lt;/b&gt; Najbolje s učijo z branjem in pisanjem.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Telesno-gibalni tip učečega.&lt;/b&gt; Najbolje se učijo preko izkušenj - premikanja, dotikanja in izdelave (aktivno raziskovanje sveta, znanstveni projekti, poizkusi, itd.).&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;"
+	/>
+	<instructions
+		en.utf8="Choose the answer which best explains your preference and check the box next to it.&lt;br&gt;&lt;b&gt;Please check more than one&lt;/b&gt; if a single answer does not match your perception. Leave blank any question that does not apply."
+		sl.utf8="Izberite odgovor, ki najbolje opisuje kaj bi storili najprej in ga obkljukajte.&lt;br&gt;&lt;b&gt;Prosimo, obkljukate več odgovorov,&lt;/b&gt; če en sam odgovor ne ustreza vašim predstavam. Vsa vprašanja, ki ne veljajo za vas, pustite prazna."
+	/>
+	<translator
+		en.utf8="Neil Fleming, http://www.vark-learn.com/"
+		sl.utf8="Gregor Anželj"
+	/>
+	<responses>
+		<response shuffle="true" id="r01">
+			<option section="V" id="a01"
+				en.utf8="draw, or give her a map."
+				sl.utf8="ji narišete ali izročite zemljevid."
+			/>
+			<option section="A" id="a01"
+				en.utf8="tell her the directions."
+				sl.utf8="ji poveste navodila."
+			/>
+			<option section="R" id="a01"
+				en.utf8="write down the directions."
+				sl.utf8="ji napišete navodila."
+			/>
+			<option section="K" id="a01"
+				en.utf8="go with her."
+				sl.utf8="greste z njo."
+			/>
+		</response>
+		<response shuffle="true" id="r02">
+			<option section="V" id="a02"
+				en.utf8="Besedi vidite v glavi in na podlagi izgleda izberete eno."
+				sl.utf8="see the words in your mind and choose by the way they look."
+			/>
+			<option section="A" id="a02"
+				en.utf8="Razmišljate, kako bi vsaka beseda zvenela in izberete eno."
+				sl.utf8="think about how each word sounds and choose one."
+			/>
+			<option section="R" id="a02"
+				en.utf8="Besedo poiščete v slovarju."
+				sl.utf8="find it in a dictionary."
+			/>
+			<option section="K" id="a02"
+				en.utf8="Obe besedi napišete na papir in izberete eno."
+				sl.utf8="write both words on paper and choose one."
+			/>
+		</response>
+		<response shuffle="true" id="r03">
+			<option section="V" id="a03"
+				en.utf8="use a map or website to show them the places."
+				sl.utf8="uporabite zemljevid ali spletno stran in jim pokažete kraje."
+			/>
+			<option section="A" id="a03"
+				en.utf8="phone, text or email them."
+				sl.utf8="jim telefonirate, pošljete SMS ali epošto."
+			/>
+			<option section="R" id="a03"
+				en.utf8="give them a copy of the printed itinerary."
+				sl.utf8="jim izročite natisnjen načrt potovanja."
+			/>
+			<option section="K" id="a03"
+				en.utf8="describe some of the highlights."
+				sl.utf8="jim opišete najpomembnejše stvari."
+			/>
+		</response>
+		<response shuffle="true" id="r04">
+			<option section="V" id="a04"
+				en.utf8="look through the cookbook for ideas from the pictures."
+				sl.utf8="Prelistate kuharsko knjigo, da bi dobili kakšno idejo iz fotografij jedi."
+			/>
+			<option section="A" id="a04"
+				en.utf8="ask friends for suggestions."
+				sl.utf8="Za nasvet vprašate prijatelje."
+			/>
+			<option section="R" id="a04"
+				en.utf8="use a cookbook where you know there is a good recipe."
+				sl.utf8="Uporabite kuharsko knjigo, za katero veste, da vsebuje dober recept."
+			/>
+			<option section="K" id="a04"
+				en.utf8="cook something you know without the need for instructions."
+				sl.utf8="Skuhate jed, ki jo že poznate, ne da bi potrebovali navodila."
+			/>
+		</response>
+		<response shuffle="true" id="r05">
+			<option section="V" id="a05"
+				en.utf8="show them internet pictures, photographs or picture books."
+				sl.utf8="Pokažete jim slike, fotografije ali foto galerije s spleta."
+			/>
+			<option section="A" id="a05"
+				en.utf8="talk about, or arrange a talk for them about parks or wildlife reserves."
+				sl.utf8="Govorite jim ali organizirate pogovor o parkih ali naravnih rezervatih."
+			/>
+			<option section="R" id="a05"
+				en.utf8="give them a book or pamphlets about the parks or wildlife reserves."
+				sl.utf8="Izročite jim knjigo ali zloženko o  parkih ali naravnih rezervatih."
+			/>
+			<option section="K" id="a05"
+				en.utf8="take them to a park or wildlife reserve and walk with them."
+				sl.utf8="Z njimi obiščete parke ali naravne rezervate."
+			/>
+		</response>
+		<response shuffle="true" id="r06">
+			<option section="V" id="a06"
+				en.utf8="It is a modern design and looks good."
+				sl.utf8="Moderna oblika in dober izgled."
+			/>
+			<option section="A" id="a06"
+				en.utf8="The salesperson telling me about its features."
+				sl.utf8="Če bi mi trgovec razložil podrobnosti o lastnostih."
+			/>
+			<option section="R" id="a06"
+				en.utf8="Reading the details about its features."
+				sl.utf8="Če bi prebral podrobnosti o lastnostih."
+			/>
+			<option section="K" id="a06"
+				en.utf8="Trying or testing it."
+				sl.utf8="Preizkus fotoaparata oz. mobilnika."
+			/>
+		</response>
+		<response shuffle="true" id="r07">
+			<option section="V" id="a07"
+				en.utf8="diagrams and charts - visual clues."
+				sl.utf8="si ogledali diagrame in grafe - vizualne namige."
+			/>
+			<option section="A" id="a07"
+				en.utf8="listening to somebody explaining it and asking questions."
+				sl.utf8="poslušali nekoga, ki je to razložil in ga/jo spraševali."
+			/>
+			<option section="R" id="a07"
+				en.utf8="written instructions – e.g. a manual or textbook."
+				sl.utf8="prebrali navodila - npr. priročnik ali učbenik."
+			/>
+			<option section="K" id="a07"
+				en.utf8="watching a demonstration."
+				sl.utf8="opazovali demonstracijo."
+			/>
+		</response>
+		<response shuffle="true" id="r08">
+			<option section="V" id="a08"
+				en.utf8="showed you a diagram of what was wrong."
+				sl.utf8="na diagramu pokaže, kaj je narobe."
+			/>
+			<option section="A" id="a08"
+				en.utf8="described what was wrong."
+				sl.utf8="opiše, kaj je narobe."
+			/>
+			<option section="R" id="a08"
+				en.utf8="gave you something to read to explain what was wrong."
+				sl.utf8="priskrbi literaturo, ki opisuje, kaj je narobe."
+			/>
+			<option section="K" id="a08"
+				en.utf8="used a plastic model to show what was wrong."
+				sl.utf8="uporabi plastični model in pokaže, kaj je narobe."
+			/>
+		</response>
+		<response shuffle="true" id="r09">
+			<option section="V" id="a09"
+				en.utf8="follow the diagrams in the book that came with it."
+				sl.utf8="Sledite diagramom v priloženi knjigi."
+			/>
+			<option section="A" id="a09"
+				en.utf8="talk with people who know about the program."
+				sl.utf8="Govorite z ljudmi, ki program že poznajo/uporabljajo."
+			/>
+			<option section="R" id="a09"
+				en.utf8="read the written instructions that came with the program."
+				sl.utf8="Preberete priložena navodila."
+			/>
+			<option section="K" id="a09"
+				en.utf8= "use the controls or keyboard."
+				sl.utf8="Uporabite miško in/ali tipkovnico."
+			/>
+		</response>
+		<response shuffle="true" id="r10">
+			<option section="V" id="a10"
+				en.utf8="interesting design and visual features."
+				sl.utf8="z zanimivim oblikovanjem in vizualnimi elementi."
+			/>
+			<option section="A" id="a10"
+				en.utf8="audio channels where I can hear music, radio programs or interviews."
+				sl.utf8="z zvočnimi kanali, da lahko poslušam glasbo, radijske programe ali intervjuje."
+			/>
+			<option section="R" id="a10"
+				en.utf8="interesting written descriptions, lists and explanations."
+				sl.utf8="z zanimivo napisanimi članki, opisi, seznami in razlagami."
+			/>
+			<option section="K" id="a10"
+				en.utf8="things I can click on, shift or try."
+				sl.utf8="z elementi, ki jih lahko klikam, premikam ali preizkusim."
+			/>
+		</response>
+		<response shuffle="true" id="r11">
+			<option section="V" id="a11"
+				en.utf8="The way it looks is appealing."
+				sl.utf8="Njen izgled in privlačna naslovnica."
+			/>
+			<option section="A" id="a11"
+				en.utf8="A friend talks about it and recommends it."
+				sl.utf8="Če bi mi jo priporočil prijatelj."
+			/>
+			<option section="R" id="a11"
+				en.utf8="Quickly reading parts of it."
+				sl.utf8="Če bi hitro prebral krajše odlomke."
+			/>
+			<option section="K" id="a11"
+				en.utf8="It has real-life stories, experiences and examples."
+				sl.utf8="Ker vsebuje resnične zgodbe, doživetja in primere."
+			/>
+		</response>
+		<response shuffle="true" id="r12">
+			<option section="V" id="a12"
+				en.utf8="diagrams showing the camera and what each part does."
+				sl.utf8="diagrame, ki prikazujejo delovanje vsakega dela fotoaparata."
+			/>
+			<option section="A" id="a12"
+				en.utf8="a chance to ask questions and talk about the camera and its features."
+				sl.utf8="možnost postavljanja vprašanj in razgovora o fotoaparatu in njegovih lastnostih."
+			/>
+			<option section="R" id="a12"
+				en.utf8="clear written instructions with lists and bullet points about what to do."
+				sl.utf8="jasno napisana navodila v obliki seznamov o tem, kako kaj narediti."
+			/>
+			<option section="K" id="a12"
+				en.utf8="many examples of good and poor photos and how to improve them."
+				sl.utf8="mnogo primerov dobrih in slabih fotografij ter kako jih izboljšati."
+			/>
+		</response>
+		<response shuffle="true" id="r13">
+			<option section="V" id="a13"
+				en.utf8="diagrams, charts or graphs."
+				sl.utf8="diagrame, grafikone ali grafe."
+			/>
+			<option section="A" id="a13"
+				en.utf8="question and answer, talk, group discussion, or guest speakers."
+				sl.utf8="vprašanja in odgovore, pogovor, skupinske diskusije ali vabljene govornike."
+			/>
+			<option section="R" id="a13"
+				en.utf8="handouts, books, or readings."
+				sl.utf8="izročke, knjige ali branja."
+			/>
+			<option section="K" id="a13"
+				en.utf8="demonstrations, models or practical sessions."
+				sl.utf8="demonstracije, modele ali praktične prikaze."
+			/>
+		</response>
+		<response shuffle="true" id="r14">
+			<option section="V" id="a14"
+				en.utf8="using graphs showing what you had achieved."
+				sl.utf8="ki z uporabo grafov predstavijo vaš dosežek."
+			/>
+			<option section="A" id="a14"
+				en.utf8="from somebody who talks it through with you."
+				sl.utf8="osebe, ki bi se z vami pogovorila o vaših rezultatih."
+			/>
+			<option section="R" id="a14"
+				en.utf8="using a written description of your results."
+				sl.utf8="ki v pisni obliki opišejo vaše rezultate."
+			/>
+			<option section="K" id="a14"
+				en.utf8="using examples from what you have done."
+				sl.utf8="ki uporabljajo primere iz vašega izdelka."
+			/>
+		</response>
+		<response shuffle="true" id="r15">
+			<option section="V" id="a15"
+				en.utf8="look at what others are eating or look at pictures of each dish."
+				sl.utf8="Pogledate fotografije jedi ali kaj jedo drugi gosti."
+			/>
+			<option section="A" id="a15"
+				en.utf8="listen to the waiter or ask friends to recommend choices."
+				sl.utf8="Vprašate natakarja ali prijatelja katero jed priporoča."
+			/>
+			<option section="R" id="a15"
+				en.utf8="choose from the descriptions in the menu."
+				sl.utf8="Jed izbere glede na opis v meniju."
+			/>
+			<option section="K" id="a15"
+				en.utf8="choose something that you have had there before."
+				sl.utf8="Izberete jed, ki jo poznate oz. ste jo že poizkusili."
+			/>
+		</response>
+		<response shuffle="true" id="r16">
+			<option section="V" id="a16"
+				en.utf8="make diagrams or get graphs to help explain things."
+				sl.utf8="Izdelate grafe ali diagrame s pomočjo katerih razložite stvari."
+			/>
+			<option section="A" id="a16"
+				en.utf8="write a few key words and practice saying your speech over and over."
+				sl.utf8="Napišete si nekaj ključnih besed in ponavljate svoj govor znova in znova."
+			/>
+			<option section="R" id="a16"
+				en.utf8="write out your speech and learn from reading it over several times."
+				sl.utf8="Napišete si celoten govor ter se ga naučite, ko ga nekajkrat preberete."
+			/>
+			<option section="K" id="a16"
+				en.utf8="gather many examples and stories to make the talk real and practical."
+				sl.utf8="Poiščete več primerov in zgodb s katerimi naredite govor življenjski in praktičen."
+			/>
+		</response>
+	</responses>
+	<questions sections="joined" order="random">
+		<section name="VARK" collapsible="0" collapsed="0" legend="false">
+			<question type="checks" response="r01" br2rows="true" id="q01"
+				en.utf8="You are helping someone who wants to go to your airport, town centre or railway station. You would:"
+				sl.utf8="Neka oseba želi priti na letališče, v središče mesta ali na železniško postajo. Pomagate ji tako, da:"
+			/>
+			<question type="checks" response="r02" br2rows="1" id="q02"
+				en.utf8="You are not sure whether a word should be spelled 'dependent' or 'dependant'. You would:"
+				sl.utf8="Niste prepričani, ali se pravilno napiše 'pripelja' ali 'pripelje'. Kaj storite?"
+			/>
+			<question type="checks" response="r03" br2rows="true" id="q03"
+				en.utf8="You are planning a holiday for a group. You want some feedback from them about the plan. You would:"
+				sl.utf8="Načrtujete počitnice za skupino. Želite njihove povratne informacije o načrtu potovanja. Zato:"
+			/>
+			<question type="checks" response="r04" br2rows="true" id="q04"
+				en.utf8="You are going to cook something as a special treat for your family. You would:"
+				sl.utf8="V znak pozornosti želite za vašo družino skuhati nekaj posebnega. Kaj storite?"
+			/>
+			<question type="checks" response="r05" br2rows="true" id="q05"
+				en.utf8="A group of tourists wants to learn about the parks or wildlife reserves in your area. You would:"
+				sl.utf8="Skupina turistov želi izvedeti čimveč o parkih ali naravnih rezervatih na vašem območju. Kaj storite?"
+			/>
+			<question type="checks" response="r06" br2rows="true" id="q06"
+				en.utf8="You are about to purchase a digital camera or mobile phone. Other than price, what would most influence your decision? "
+				sl.utf8="Kuiti želite digitalni fotoaparat ali mobilni telefon. Kaj bi, razen cene, najbolj vplivalo na vašo odločitev?"
+			/>
+			<question type="checks" response="r07" br2rows="true" id="q07"
+				en.utf8="Remember a time when you learned how to do something new. Try to avoid choosing a physical skill, eg. riding a bike. You learned best by:"
+				sl.utf8="Se spomnite, ko ste se naučili nekaj novega. Mislite na nekaj drugega, kot na fizično zmožnost, kot npr. vožnja kolesa. Najhitreje ste se naučili, če ste:"
+			/>
+			<question type="checks" response="r08" br2rows="true" id="q08"
+				en.utf8="You have a problem with your heart. You would prefer that the doctor:"
+				sl.utf8="Imate težave s srcem. Najraje bi videli, da zdravnik:"
+			/>
+			<question type="checks" response="r09" br2rows="true" id="q09"
+				en.utf8="You want to learn a new program, skill or game on a computer. You would:"
+				sl.utf8="Želite se naučiti uporabljati nov računalniški program ali igrati računalniško igro. Kaj storite?"
+			/>
+			<question type="checks" response="r10" br2rows="true" id="q10"
+				en.utf8="I like websites that have:"
+				sl.utf8="Všeč so mi spletne strani:"
+			/>
+			<question type="checks" response="r11" br2rows="true" id="q11"
+				en.utf8="Other than price, what would most influence your decision to buy a new non-fiction book?"
+				sl.utf8="Kaj bi, razen cene, najbolj vplivalo na vašo odločitev, da bi kupili novo ne-domišljijsko knjigo?"
+			/>
+			<question type="checks" response="r12" br2rows="true" id="q12"
+				en.utf8="You are using a book, CD or website to learn how to take photos with your new digital camera. You would like to have:"
+				sl.utf8="Uporabljate knjigo, CD ali spletno stran, da se naučite kako fotografirati z novim digitalim fotoaparatom. Želeli bi imeti:"
+			/>
+			<question type="checks" response="r13" br2rows="true" id="q13"
+				en.utf8="Do you prefer a teacher or a presenter who uses:"
+				sl.utf8="Ali vam je všeč učitelj ali predavatelj, ki uporablja:"
+			/>
+			<question type="checks" response="r14" br2rows="true" id="q14"
+				en.utf8="You have finished a competition or test and would like some feedback. You would like to have feedback:"
+				sl.utf8="Zaključili ste tekmovanje ali test in si želite povratnih informacij. Želite si povratnih informacij:"
+			/>
+			<question type="checks" response="r15" br2rows="true" id="q15"
+				en.utf8="You are going to choose food at a restaurant or cafe. You would:"
+				sl.utf8="Naročiti želite hrano v restavraciji ali lokalu. Kaj storite?"
+			/>
+			<question type="checks" response="r16" br2rows="true" id="q16"
+				en.utf8="You have to make an important speech at a conference or special occasion. You would:"
+				sl.utf8="Pripraviti morate pomemben govor na konferenci ali na posebni priložnosti. Kaj storite?"
+			/>
+		</section>
+	</questions>
+	<results type="value" mode="custom" showResults="true" showSummary="true" showResponses="false" showChart="true">
+		<legend>
+			<item name="V"
+				sl.utf8="Vizualni tip"
+				en.utf8="Visual type"
+			/>
+			<item name="A"
+				sl.utf8="Slušni tip"
+				en.utf8="Aural type"
+			/>
+			<item name="R"
+				sl.utf8="Bralno/pisalni tip"
+				en.utf8="Read/Write type"
+			/>
+			<item name="K"
+				sl.utf8="Telesno-gibalni tip"
+				en.utf8="Kinesthetic type"
+			/>
+			<item name="M"
+				sl.utf8="Večvrstni tip"
+				en.utf8="Multimodal type"
+			/>
+		</legend>
+		<result section="V"
+			sl.utf8="Opis vizualnega tipa v slovenščini."
+			en.utf8="Visual type description in English."
+		/>
+		<result section="A"
+			sl.utf8="Opis slušnega tipa v slovenščini."
+			en.utf8="Aural type description in English."
+		/>
+		<result section="R"
+			sl.utf8="Opis bralno/pisalnega tipa v slovenščini."
+			en.utf8="Read/Write type description in English."
+		/>
+		<result section="K"
+			sl.utf8="Opis telesno-gibalnega tipa v slovenščini."
+			en.utf8="Kinesthetic type description in English."
+		/>
+		<result section="M"
+			sl.utf8="Opis večvrstnega tipa v slovenščini."
+			en.utf8="Multimodal type description in English."
+		/>
+		<chart type="pie" space="3d" />
+	</results>
+</survey>

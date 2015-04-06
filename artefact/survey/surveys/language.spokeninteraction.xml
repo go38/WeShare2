@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey name="language.spokeninteraction">
+	<title
+		sl.utf8="Govorno sporazumevanje"
+		en.utf8="Spoken interaction"
+		zh_tw.utf8="Spoken interaction"
+	/>
+	<description
+		sl.utf8=""
+		en.utf8=""
+	/>
+	<instructions
+		sl.utf8="Pazljivo preberite vsako izjavo. Če se z izjavo strinjate, obkljukajte ustrezno polje."
+		en.utf8="Read each statement carefully. If you agree with the statement, than tick the appropriate checkbox."
+	/>
+	<translator
+		sl.utf8=""
+		en.utf8=""
+	/>
+	<questions sections="separated">
+		<section name="a1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="A1 - Vstopna raven"
+				en.utf8="A1 - Breakthrough"
+		>
+			<question type="checkbox" id="q1"
+				sl.utf8="Znam predstaviti drugo osebo in uporabiti najosnovnejše izraze pozdravljanja."
+				en.utf8="I can introduce somebody and use basic greeting and leave-talking expressions."
+			/>
+			<question type="checkbox" id="q2"
+				sl.utf8="Znam postavljati preprosta vprašanja in odgovarjati nanje ter oblikovati preproste izjave, povezane s splošno znanimi temam, ter se odzivati na take izjave."
+				en.utf8="I can ask and answer simple questions, initiate and respond to the simple statements in areas of immediate need or on very familiar topics."
+			/>
+			<question type="checkbox" id="q3"
+				sl.utf8="Znam se preprosto in razumljivo izražati, čeprav mora sogovornik včasih ponoviti povedano ali se izraziti kako drugače in mi tako pomagati, da povem, kar hočem."
+				en.utf8="I can make myself understood in a simple way but I am dependent on my partner being prepared to repeat more slowly and rphrase what I say and to help me to say what I want."
+			/>
+			<question type="checkbox" id="q4"
+				sl.utf8="Znam opravljati preproste nakupe, pri katerih si lahko pomagam tudi z gibi."
+				en.utf8="I can make simple purchases where pointing or other gestures can support the verbal reference."
+			/>
+			<question type="checkbox" id="q5"
+				sl.utf8="Obvladam izraze za številke, količine, cene, čas."
+				en.utf8="I can handle numbers, quantities, cost and time."
+			/>
+			<question type="checkbox" id="q6"
+				sl.utf8="Druge znam za kaj prositi in jim tudi kaj dati."
+				en.utf8="I can ask people for things and give people things."
+			/>
+			<question type="checkbox" id="q7"
+				sl.utf8="Znam postavljati vprašanja (npr. o tem, kje nekdo živi; o ljudeh, ki jih poznam; rečeh, ki jih ima itn.) in znam odgovoriti na taka vprašanja, če so povedana počasi in razločno."
+				en.utf8="I can ask people questions about where they live, people they know, things they have, etc., and answer such questions addressed to me provided they are articulated slowly and clearly."
+			/>
+			<question type="checkbox" id="q8"
+				sl.utf8="Znam opredeliti čas z izrazi, kot so »prihodnji teden«, »prejšnji petek«, »novembra«, »ob treh«."
+				en.utf8="I can indicate time by such phrases as »next week«, »last Friday«, »in November«, »three o'clock«."
+			/>
+		</section>
+		<section name="a2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="A2 – Vmesna raven"
+				en.utf8="A2 – Waystage"
+		>
+			<question type="checkbox" id="q9"
+				sl.utf8="Znam se sporazumevati pri preprostih opravkih v trgovini, na pošti ali v banki."
+				en.utf8="I can make simple transactions in shops, post offices or banks."
+			/>
+			<question type="checkbox" id="q10"
+				sl.utf8="Znam uporabljati javna prevozna sredstva (npr. avtobuse, vlake, taksije), vprašati po osnovnih podatkih in kupiti vozovnico."
+				en.utf8="I can use public transport: buses, trains, and taxis, ask for basic information and buy tickets."
+			/>
+			<question type="checkbox" id="q11"
+				sl.utf8="Znam se pozanimati o najosnovnejših podatkih glede potovanja (npr. pri potovalni agenciji)."
+				en.utf8="I can get simple information about travelling."
+			/>
+			<question type="checkbox" id="q12"
+				sl.utf8="Znam naročiti hrano in pijačo."
+				en.utf8="I can order something to eat or drink."
+			/>
+			<question type="checkbox" id="q13"
+				sl.utf8="Znam opravljati preproste nakupe, pri čemer moram povedati, kaj želim; znam vprašati po ceni."
+				en.utf8="I can make simple purchases by stating what I want and asking the price."
+			/>
+			<question type="checkbox" id="q14"
+				sl.utf8="Znam vprašati za pot ali komu svetovati, v katero smer naj gre, če si pri tem lahko pomagam z zemljevidom ali načrtom kraja."
+				en.utf8="I can ask for and give directions using a map or plan."
+			/>
+			<question type="checkbox" id="q15"
+				sl.utf8="Znam pozdraviti, vprašati po počutju in se odzvati na odgovore."
+				en.utf8="I can ask how people are and how they react to news."
+			/>
+			<question type="checkbox" id="q16"
+				sl.utf8="Znam koga povabiti in povabilo sprejeti."
+				en.utf8="I can make and respond to invitations."
+			/>
+			<question type="checkbox" id="q17"
+				sl.utf8="Znam se opravičiti ali opravičilo sprejeti."
+				en.utf8="I can make and accept apologies."
+			/>
+			<question type="checkbox" id="q18"
+				sl.utf8="Znam povedati, kaj mi je všeč in kaj ne."
+				en.utf8="I can say what I like and dislike."
+			/>
+			<question type="checkbox" id="q19"
+				sl.utf8="Znam se pogovarjati o tem, kaj je treba storiti oziroma kam iti, in se dogovoriti za srečanje."
+				en.utf8="I can discuss with other people what to do, where to go and make arrangements to meet."
+			/>
+			<question type="checkbox" id="q20"
+				sl.utf8="Znam vprašati, kaj nekdo dela in kaj počne v prostem času."
+				en.utf8="I can ask people questions about what they do at work and in their free time, and answer such questions addressed to me."
+			/>
+		</section>
+		<section name="b1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="B1 – Raven sporazumevalnega praga"
+				en.utf8="B1 – Threshold"
+		>
+			<question type="checkbox" id="q21"
+				sl.utf8="Preprost, neposreden pogovor o temah, ki so mi blizu ali me osebno zanimajo sem sposoben začeti, v njem dejavno sodelovati in ga tudi končati."
+				en.utf8="I can start, maintain and conclude simple face-to-face conversation on topics that are familiar or of personal interest."
+			/>
+			<question type="checkbox" id="q22"
+				sl.utf8="Sposoben sem sodelovati v pogovoru ali razpravi, vendar se včasih težko natančno izrazim."
+				en.utf8="I can take part in a conversation or discussion but may sometimes have difficulties with accurate interaction."
+			/>
+			<question type="checkbox" id="q23"
+				sl.utf8="Obvladam večino situacij, ki se pojavljajo pri rezervaciji potovanj v agencijah ali na potovanjih."
+				en.utf8="I can deal with most situations likely to arise when making travel arrangements through an agent or when actually travelling."
+			/>
+			<question type="checkbox" id="q24"
+				sl.utf8="Znam vprašati za pot in slediti natančnim navodilom."
+				en.utf8="I can ask for and follow detailed directions."
+			/>
+			<question type="checkbox" id="q25"
+				sl.utf8="Znam izraziti občutke presenečenja, sreče, žalosti, zanimanja in ravnodušja ter se primerno odzivati na izraze teh občutkov pri drugih."
+				en.utf8="I can express and respond to feelings such as surprise, happiness, sadness, interest and indifference."
+			/>
+			<question type="checkbox" id="q26"
+				sl.utf8="Na primeren način znam izraziti svoje (ne)strinjanje s čim."
+				en.utf8="I can agree and disagree politely."
+			/>
+			<question type="checkbox" id="q27"
+				sl.utf8="V pogovorih s prijatelji in z znanci znam izmenjavati osebne poglede in osebna mnenja."
+				en.utf8="I can give or seek personal views and opinions in an informal discussion with friends."
+			/>
+		</section>
+		<section name="b2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="B2 – Višja raven"
+				en.utf8="B2 – Vantage"
+		>
+			<question type="checkbox" id="q28"
+				sl.utf8="Znam spontano začeti pogovor, v njem sodelovati, se uspešno odzivati na izjave sogovornikov in pogovor tudi končati."
+				en.utf8="I can initiate, maintain and end conversation naturally and use turn-taking effectively."
+			/>
+			<question type="checkbox" id="q29"
+				sl.utf8="Znam izmenjati obširne strokovne informacije s strokovnih področij."
+				en.utf8="I can exchange considerable quantities of detailed factual information on matters within my fields of interest."
+			/>
+			<question type="checkbox" id="q30"
+				sl.utf8="Znam izraziti čustva različnih stopenj in poudariti pomen določenih dogodkov in izkušenj."
+				en.utf8="I can convey degrees of emotion and highlight the personal significance of events and experiences."
+			/>
+			<question type="checkbox" id="q31"
+				sl.utf8="Aktivno lahko sodelujem pri daljših pogovorih s splošno tematiko."
+				en.utf8="I can actively engage in extended conversation on most general topics."
+			/>
+			<question type="checkbox" id="q32"
+				sl.utf8="V debatah znam utemeljiti, komentirati in zagovarjati svoja stališča."
+				en.utf8="I can account for and sustain my opinions in discussion by providing relevant explanations, arguments and comments."
+			/>
+			<question type="checkbox" id="q33"
+				sl.utf8="Znam pripomoči k nadaljevanju pogovora o znani temi, tako da npr. potrdim razumevanje povedanega ali da pozovem druge, naj nekaj povedo."
+				en.utf8="I can help a discussion along on familiar ground, confirming comprehension, inviting others to contribute, etc."
+			/>
+			<question type="checkbox" id="q34"
+				sl.utf8="Znam voditi vnaprej pripravljen intervju in pri tem preveriti pravilno razumevanje povedanega ter postavljati dodatna vprašanja na zanimive odgovore."
+				en.utf8="I can carry out a prepared interview, checking and confirming information, and following up interesting replies."
+			/>
+		</section>
+		<section name="c1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="C1 – Raven učinkovitosti"
+				en.utf8="C1 – Effectiveness"
+		>
+			<question type="checkbox" id="q35"
+				sl.utf8="Lahko sledim lahko živahnemu pogovoru med naravnimi govorci."
+				en.utf8="I can keep up with an animated conversation between native speakers."
+			/>
+			<question type="checkbox" id="q36"
+				sl.utf8="Tekoče in brez nesporazumov se lahko pogovarjam o številnih splošnih, strokovnih in znanstvenih temah."
+				en.utf8="I can use the language fluently, accurately and effectively on a wide range of general, professional or academic topics."
+			/>
+			<question type="checkbox" id="q37"
+				sl.utf8="V družabnih pogovorih se znam jezikovno prilagajati situaciji, izražati čustva, se šaliti in razumem skriti pomen."
+				en.utf8="I can use the language flexibly and effectively for social purposes, including emotional, allusive and joking usage."
+			/>
+			<question type="checkbox" id="q38"
+				sl.utf8="Znam jezikovno jasno in natančno izraziti svoje misli in svoja mnenja, prepričljivo zagovarjati določena stališča in se ustrezno odzivati nanje."
+				en.utf8="I can express my ideas and opinions clearly and precisely, and can present and respond to complex lines of reasoning convincingly."
+			/>
+			<question type="checkbox" id="q39"
+				sl.utf8="Lahko sodelujem v živahni in ne v naprej pripravljeni debati (npr. sestanek)."
+				en.utf8="I can actively participate in unstructurated discussion (e.g. at meetings)."
+			/>
+		</section>
+		<section name="c2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="C2 – Raven mojstrstva"
+				en.utf8="C2 – Mastery"
+		>
+			<question type="checkbox" id="q40"
+				sl.utf8="Brez napora sodelujem v kakršnemkoli pogovoru in kakršnikoli razpravi z naravnimi govorci."
+				en.utf8="I can take part effortlessly in all conversations and discussions with native speakers."
+			/>
+		</section>
+	</questions>
+</survey>

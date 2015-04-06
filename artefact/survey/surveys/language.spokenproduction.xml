@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey name="language.spokenproduction">
+	<title
+		sl.utf8="Govorno sporočanje"
+		en.utf8="Spoken production"
+		zh_tw.utf8="Spoken production"
+	/>
+	<description
+		sl.utf8=""
+		en.utf8=""
+	/>
+	<instructions
+		sl.utf8="Pazljivo preberite vsako izjavo. Če se z izjavo strinjate, obkljukajte ustrezno polje."
+		en.utf8="Read each statement carefully. If you agree with the statement, than tick the appropriate checkbox."
+	/>
+	<translator
+		sl.utf8=""
+		en.utf8=""
+	/>
+	<questions sections="separated">
+		<section name="a1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="A1 - Vstopna raven"
+				en.utf8="A1 - Breakthrough"
+		>
+			<question type="checkbox" id="q1"
+				sl.utf8="Znam povedati podatke o sebi (npr. naslov, tel. številka, starost, država, družina, hobiji)."
+				en.utf8="I can give personal information about myself (address, telephone number, nationality, age, family, and hobbies)."
+			/>
+			<question type="checkbox" id="q2"
+				sl.utf8="Opisati znam, kje stanujem."
+				en.utf8="I can describe where I live."
+			/>
+			<question type="checkbox" id="q3"
+				sl.utf8="Na enostaven način znam govoriti o stvareh in osebah iz svojega neposrednega okolja."
+				en.utf8="Using simple words I can talk about things and persons from my direct environment."
+			/>
+			<question type="checkbox" id="q4"
+				sl.utf8="Na enostaven način znam opisati, kaj počnem v šoli in prostem času."
+				en.utf8="I can describe what I do at school and in my free time."
+			/>
+			<question type="checkbox" id="q5"
+				sl.utf8="Na enostaven način znam opisati kraj, ki ga poznam."
+				en.utf8="Using simple words I can describe the place I know."
+			/>
+			<question type="checkbox" id="q6"
+				sl.utf8="V javnosti znam pozdraviti goste, če sem se na to pripravil."
+				en.utf8="In public, I can greet the quests if I have prepared the sentences before."
+			/>
+		</section>
+		<section name="a2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="A2 – Vmesna raven"
+				en.utf8="A2 – Waystage"
+		>
+			<question type="checkbox" id="q7"
+				sl.utf8="Znam opisati sebe, svojo družino in druge ljudi."
+				en.utf8="I can describe myself, my family and other people."
+			/>
+			<question type="checkbox" id="q8"
+				sl.utf8="Znam podrobneje opisati, kje živim."
+				en.utf8="I can describe in detail where I live."
+			/>
+			<question type="checkbox" id="q9"
+				sl.utf8="Znam na kratko in enostavno opisati dogodke."
+				en.utf8="I can give short, basic descriptions of events."
+			/>
+			<question type="checkbox" id="q10"
+				sl.utf8="Na preprost način znam opisati svoje hobije."
+				en.utf8="I can describe my hobbies and interests in a simple way."
+			/>
+			<question type="checkbox" id="q11"
+				sl.utf8="Znam opisati minule dogodke (npr. zadnji konec tedna, lanske počitnice) in osebne izkušnje."
+				en.utf8="I can describe past actions and personal experience (e.g. the last weekend, my last holidays)."
+			/>
+			<question type="checkbox" id="q12"
+				sl.utf8="Znam opisati svojo do zdaj pridobljeno izobrazbo in (počitniško) delo, ki sem ga nazadnje opravljal."
+				en.utf8="I can describe my educational background and my present or most recent (holiday) job."
+			/>
+		</section>
+		<section name="b1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="B1 – Raven sporazumevalnega praga"
+				en.utf8="B1 – Threshold"
+		>
+			<question type="checkbox" id="q13"
+				sl.utf8="Znam pripovedovati zgodbe z znanim besediščem."
+				en.utf8="I can narrate a story by using the known vocabulary."
+			/>
+			<question type="checkbox" id="q14"
+				sl.utf8="Dokaj natančno znam poročati o izkušnjah in opisati svoja občutja in svoje odzive."
+				en.utf8="I can give detailed accounts of experiences, describing feelings and reactions."
+			/>
+			<question type="checkbox" id="q15"
+				sl.utf8="Znam razložiti in utemeljiti svoje načrte, odločitve in svoja dejanja."
+				en.utf8="I can explain and give reasons for my plans, intentions and actions."
+			/>
+			<question type="checkbox" id="q16"
+				sl.utf8="Znam obnoviti vsebino filma ali knjige in opisati svoje odzive."
+				en.utf8="I can relate the plot of a book or film and describe my reactions."
+			/>
+			<question type="checkbox" id="q17"
+				sl.utf8="Znam poenostavljeno obnoviti pisne odlomke, če lahko uporabim besedišče in zaporedje iz izvirnika."
+				en.utf8="I can paraphrase short written passages orally in a simple fashion, using the original text wording and order."
+			/>
+		</section>
+		<section name="b2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="B2 – Višja raven"
+				en.utf8="B2 – Vantage"
+		>
+			<question type="checkbox" id="q18"
+				sl.utf8="Jasno in podrobno znam opisati številne teme s svojega interesnega področja in tudi poročati o njih."
+				en.utf8="I can give clear, detailed descriptions on a wide range of subjects related to my fields of interest."
+			/>
+			<question type="checkbox" id="q19"
+				sl.utf8="Ustno znam povzeti krajše odlomke novic, intervjujev ali dokumentarnih oddaj, v katerih se pojavljajo določena mnenja, določeni argumenti in določene razprave."
+				en.utf8="I can understand and summarise orally short extracts from news items, interviews or documentaries containing opinions, argument and discussion."
+			/>
+			<question type="checkbox" id="q20"
+				sl.utf8="Ustno znam povzeti zgodbo in zaporedje dogodkov iz odlomkov filmov ali gledaliških iger."
+				en.utf8="I can understand and summarise orally the plot and sequence of events in an extract from a film or play."
+			/>
+			<question type="checkbox" id="q21"
+				sl.utf8="Svoje misli znam logično povezovati in argumentirati."
+				en.utf8="I can construct a chain of reasoned argument, linking my ideas logically."
+			/>
+			<question type="checkbox" id="q22"
+				sl.utf8="Znam razložiti svoje gledanje na določen problem in podati prednosti ter pomanjkljivosti raznih možnosti."
+				en.utf8="I can explain a viewpoint on a topical issue giving the advantages and disadvantages of various options."
+			/>
+			<question type="checkbox" id="q23"
+				sl.utf8="Znam izražati domneve o vzrokih in posledicah ter se pogovarjati o mogočih situacijah."
+				en.utf8="I can speculate about causes, consequences, and hypothetical situations."
+			/>
+		</section>
+		<section name="c1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="C1 – Raven učinkovitosti"
+				en.utf8="C1 – Effectiveness"
+		>
+			<question type="checkbox" id="q24"
+				sl.utf8="Znam jezikovno jasno in natančno opisati zapleteno problematiko."
+				en.utf8="I can give clear, detailed descriptions of complex subjects."
+			/>
+			<question type="checkbox" id="q25"
+				sl.utf8="Znam sestaviti ustni povzetek daljšega, zahtevnega besedila."
+				en.utf8="I can orally summarise long, demanding texts."
+			/>
+			<question type="checkbox" id="q26"
+				sl.utf8="Znam ustno podati obširen opis ali obširno poročilo, pri čemer je treba smiselno povezati teme, razviti določena stališča in podati primeren sklep."
+				en.utf8="I can present orally a comprehensive description or report, integrating themes, developing particular points and rounding off with an appropriate conclusion."
+			/>
+			<question type="checkbox" id="q27"
+				sl.utf8="Tudi brez pisne predloge znam jasno predstaviti problematiko z osebnega ali s strokovnega področja, in spontano odgovarjati na vprašanja poslušalcev."
+				en.utf8="I can give a clearly developed presentation on a subject in my fields of personal or professional interest, departing when necessary from the prepared text and following up spontaneously points raised by members of the audience."
+			/>
+		</section>
+		<section name="c2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="C2 – Raven mojstrstva"
+				en.utf8="C2 – Mastery"
+		>
+			<question type="checkbox" id="q28"
+				sl.utf8="Razumem podatke iz različnih virov in znam dejstva in utemeljitve preoblikovati ter povezati v jasno, sklenjeno ustno predstavitev."
+				en.utf8="I can understand and summarise orally information from different sources, reconstructing arguments and accounts in a coherent presentation of the overall result."
+			/>
+			<question type="checkbox" id="q29"
+				sl.utf8="Preoblikovati znam misli in stališča ter pri tem tudi kaj poudariti, pomensko opredeliti in se izogniti nesporazumom."
+				en.utf8="I can present ideas and viewpoints in a very flexible manner in order to give emphasis, to differentiate and to eliminate ambiguity."
+			/>
+		</section>
+	</questions>
+</survey>

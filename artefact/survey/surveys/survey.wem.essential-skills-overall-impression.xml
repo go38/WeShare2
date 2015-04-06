@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey name="survey.wem.essential-skills-overall-impression" version="2011090800" author="Workplace Education Manitoba" url="http://www.wem.mb.ca/">
+	<title
+		en.utf8="My Essential Skills - Overall Impression"
+		zh_tw.utf8="我的基本技能 - 整體印象"
+	/>
+	<copyright
+		en.utf8="Copyright © 2011 Workplace Education Manitoba. All rights reserved."
+	/>
+	<description
+		en.utf8="&lt;p&gt;Transfer the overall impressions from your self assessments by selecting the radio button that you feel most closely matches your overall confidence in the Essential Skills listed in the right hand column.&lt;/p&gt;&lt;p&gt;Rommuel's self assessment summary has been provided as an example; you should delete his summary information and replace it with yours.&lt;/p&gt;"
+	/>
+	<instructions
+		en.utf8="&lt;p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Red light&lt;/b&gt; - I have not started moving in this area&lt;/li&gt;&lt;li&gt;&lt;b&gt;Yellow light&lt;/b&gt; - I move with caution in this area&lt;/li&gt;&lt;li&gt;&lt;b&gt;Green light&lt;/b&gt; - I move confidently in this area&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;"
+	/>
+	<questions sections="separated">
+		<section name="TEST" collapsible="0" collapsed="0" en.utf8="Workplace Essential Skills">
+			<question type="trafficlights" id="q01"
+				en.utf8="I can read and follow step-by-step installation instructions and notes"
+			/>
+			<question type="trafficlights" id="q02"
+				en.utf8="I am able to read and understand information in operating handbooks and service and safety manuals"
+			/>
+			<question type="trafficlights" id="q03"
+				en.utf8="I can find and interpret the information I need from the Canadian  Electrical Code "
+			/>
+			<question type="trafficlights" id="q04"
+				en.utf8="I can identify safety and other work-related signs, symbols and labels that keep me safe at work"
+			/>
+			<question type="trafficlights" id="q05"
+				en.utf8="I am able to locate information I need from lists, schedules, tables, graphs and diagrams"
+			/>
+			<question type="trafficlights" id="q06"
+				en.utf8="I can get all the details I need from reading and interpreting blueprints and technical drawings, including schematics"
+			/>
+			<question type="trafficlights" id="q07"
+				en.utf8="I can blend information from different  diagrams or tables in a manual to get the information I need to troubleshoot  a problem "
+			/>
+			<question type="trafficlights" id="q08"
+				en.utf8="I can easily record accurate data and write clear short notes in log books or daily work journals"
+			/>
+			<question type="trafficlights" id="q09"
+				en.utf8="I feel comfortable communicating with co-workers and other trades to coordinate work tasks, share information and discuss issues"
+			/>
+			<question type="trafficlights" id="q10"
+				en.utf8="I can clearly and precisely communicate critical  information in a noisy work environment "
+			/>
+			<question type="trafficlights" id="q11"
+				en.utf8="I have all the numeracy skills I need to assemble, install, test, troubleshoot and repair electrical wiring, fixtures  and equipment"
+			/>
+			<question type="trafficlights" id="q12"
+				en.utf8="I am good at measuring precisely, using instruments  to measure time,  distance, temperature, voltage,  resistance, etc."
+			/>
+			<question type="trafficlights" id="q13"
+				en.utf8="I am comfortable using a calculator to perform complex calculations"
+			/>
+			<question type="trafficlights" id="q14"
+				en.utf8="I am able to collect and analyze data and identify patterns in order to figure out the next step"
+			/>
+			<question type="trafficlights" id="q15"
+				en.utf8="I am able to identify the nature of a problem, evaluate options and find an appropriate solution "
+			/>
+			<question type="trafficlights" id="q16"
+				en.utf8="I am comfortable using standard troubleshooting procedures to repair equipment "
+			/>
+			<question type="trafficlights" id="q17"
+				en.utf8="I am confident that my decision-making skills lead me to make safe, appropriate and timely decisions"
+			/>
+			<question type="trafficlights" id="q18"
+				en.utf8="I can efficiently organize and prioritize my work tasks to use my time effectively "
+			/>
+			<question type="trafficlights" id="q19"
+				en.utf8="I accurately and confidently remember standard work  processes and procedures "
+			/>
+			<question type="trafficlights" id="q20"
+				en.utf8="I can find the information I need using a variety of sources, such as co-workers, supervisors, documents, manuals or online resources"
+			/>
+			<question type="trafficlights" id="q21"
+				en.utf8="I am comfortable working independently, yet also working collaboratively as a part of a team"
+			/>
+			<question type="trafficlights" id="q22"
+				en.utf8="I am comfortable when new technologies are introduced and have the skills I need to adapt"
+			/>
+			<question type="trafficlights" id="q23"
+				en.utf8="I look for and take advantage of training opportunities"
+			/>
+			<question type="trafficlights" id="q24"
+				en.utf8="I am confident I have all the skills I need to take on new learning opportunities"
+			/>
+		</section>
+	</questions>
+	<results showResults="false" showSummary="false" showResponses="false" showChart="false">
+	</results>
+</survey>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey name="survey.mbti" version="2011083100" author="Katharine Cook Briggs, Isabel Briggs Myers" url="http://www.myersbriggs.org/" requiredResponses="true">
+	<title
+		zh_tw.utf8="邁爾斯-布里格斯性格分類法(MBTI)"
+		en.utf8="Myers-Briggs Type Indicator (MBTI)"
+		sl.utf8="Myers-Briggs kazalnik tipa (MBTI)"
+	/>
+	<description
+		en.utf8="{image:mbti.png}"
+		sl.utf8="{image:mbti.png}"
+	/>
+	<instructions
+		en.utf8=""
+		sl.utf8=""
+	/>
+	<copyright
+		en.utf8="Copyright © Katharine Cook Briggs, Isabel Briggs Myers. All rights reserved."
+		sl.utf8="Avtorske pravice © Katharine Cook Briggs, Isabel Briggs Myers. Vse pravice pridržane."
+	/>
+	<translator
+		en.utf8="Katharine Cook Briggs, Isabel Briggs Myers, http://www.myersbriggs.org/"
+		sl.utf8="Gregor Anželj"
+	/>
+	<responses>
+		<response id="r01">
+			<option value="a"
+				en.utf8="expend energy, enjoy groups"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="conserve energy, enjoy one-on-one"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r02">
+			<option value="a"
+				en.utf8="interpret matters literally, rely on common sense"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="look for meaning and possibilities, rely on foresight"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r03">
+			<option value="a"
+				en.utf8="logical, thinking, questioning"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="empathetic, feeling, accommodating"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r04">
+			<option value="a"
+				en.utf8="organized, orderly"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="flexible, adaptable"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r05">
+			<option value="a"
+				en.utf8="more outgoing, think out loud"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="more reserved, think to yourself"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r06">
+			<option value="a"
+				en.utf8="practical, realistic, experiential"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="imaginative, innovative, theoretical"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r07">
+			<option value="a"
+				en.utf8="candid, straight forward, frank"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8=""
+				sl.utf8="tactful, kind, encouraging"
+			/>
+		</response>
+		<response id="r08">
+			<option value="a"
+				en.utf8="plan, schedule"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="unplanned, spontaneous"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r09">
+			<option value="a"
+				en.utf8="seek many tasks, public activities, interaction with others"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="seek more private, solitary activities with quiet to concentrate"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r10">
+			<option value="a"
+				en.utf8="standard, usual, conventional"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="different, novel, unique"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r11">
+			<option value="a"
+				en.utf8="firm, tend to criticize, hold the line"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="gentle, tend to appreciate, conciliate"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r12">
+			<option value="a"
+				en.utf8="regulated, structured"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="easygoing, “live” and “let live”"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r13">
+			<option value="a"
+				en.utf8="external, communicative, express yourself"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="internal, reticent, keep to yourself"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r14">
+			<option value="a"
+				en.utf8="consider immediate issues, focus on the here-and-now"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="look to the future, global perspective, “big picture”"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r15">
+			<option value="a"
+				en.utf8="tough-minded, just"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="tender-hearted, merciful"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r16">
+			<option value="a"
+				en.utf8="preparation, plan ahead"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="go with the flow, adapt as you go"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r17">
+			<option value="a"
+				en.utf8="active, initiate"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="reflective, deliberate"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r18">
+			<option value="a"
+				en.utf8="facts, things, seeing “what is”"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="ideas, dreams, seeing “what could be”, philosophical"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r19">
+			<option value="a"
+				en.utf8="matter of fact, issue-oriented, principled"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="sensitive, people-oriented, compassionate"
+				sl.utf8=""
+			/>
+		</response>
+		<response id="r20">
+			<option value="a"
+				en.utf8="control, govern"
+				sl.utf8=""
+			/>
+			<option value="b"
+				en.utf8="latitude, freedom"
+				sl.utf8=""
+			/>
+		</response>
+	</responses>
+	<questions sections="joined">
+		<section name="MBTI" collapsible="0" collapsed="0" legend="false">
+			<question type="radio" response="r01" br2rows="true" id="q01"
+				en.utf8="1:"
+				sl.utf8="1:"
+			/>
+			<question type="radio" response="r02" br2rows="true" id="q02"
+				en.utf8="2:"
+				sl.utf8="2:"
+			/>
+			<question type="radio" response="r03" br2rows="true" id="q03"
+				en.utf8="3:"
+				sl.utf8="3:"
+			/>
+			<question type="radio" response="r04" br2rows="true" id="q04"
+				en.utf8="4:"
+				sl.utf8="4:"
+			/>
+			<question type="radio" response="r05" br2rows="true" id="q05"
+				en.utf8="5:"
+				sl.utf8="5:"
+			/>
+			<question type="radio" response="r06" br2rows="true" id="q06"
+				en.utf8="6:"
+				sl.utf8="6:"
+			/>
+			<question type="radio" response="r07" br2rows="true" id="q07"
+				en.utf8="7:"
+				sl.utf8="7:"
+			/>
+			<question type="radio" response="r08" br2rows="true" id="q08"
+				en.utf8="8:"
+				sl.utf8="8:"
+			/>
+			<question type="radio" response="r09" br2rows="true" id="q09"
+				en.utf8="9:"
+				sl.utf8="9:"
+			/>
+			<question type="radio" response="r10" br2rows="true" id="q10"
+				en.utf8="10:"
+				sl.utf8="10:"
+			/>
+			<question type="radio" response="r11" br2rows="true" id="q11"
+				en.utf8="11:"
+				sl.utf8="11:"
+			/>
+			<question type="radio" response="r12" br2rows="true" id="q12"
+				en.utf8="12:"
+				sl.utf8="12:"
+			/>
+			<question type="radio" response="r13" br2rows="true" id="q13"
+				en.utf8="13:"
+				sl.utf8="13:"
+			/>
+			<question type="radio" response="r14" br2rows="true" id="q14"
+				en.utf8="14:"
+				sl.utf8="14:"
+			/>
+			<question type="radio" response="r15" br2rows="true" id="q15"
+				en.utf8="15:"
+				sl.utf8="15:"
+			/>
+			<question type="radio" response="r16" br2rows="true" id="q16"
+				en.utf8="16:"
+				sl.utf8="16:"
+			/>
+			<question type="radio" response="r17" br2rows="true" id="q17"
+				en.utf8="17:"
+				sl.utf8="17:"
+			/>
+			<question type="radio" response="r18" br2rows="true" id="q18"
+				en.utf8="18:"
+				sl.utf8="18:"
+			/>
+			<question type="radio" response="r19" br2rows="true" id="q19"
+				en.utf8="19:"
+				sl.utf8="19:"
+			/>
+			<question type="radio" response="r20" br2rows="true" id="q20"
+				en.utf8="20:"
+				sl.utf8="20:"
+			/>
+		</section>
+	</questions>
+	<results type="value" mode="custom" showResults="true" showSummary="false" showResponses="false" showChart="false">
+		<result section="MBTI"
+			en.utf8="Myers-Briggs Type Indicator"
+			sl.utf8="Myers-Briggs kazalnik tipa"
+		>
+			<match value="ENFJ"
+				en.utf8="Warm, empathetic, responsive, and responsible. Highly attuned to the emotions, needs, and motivations of others. Find potential in everyone, want to help others fulfill their potential. May act as catalysts for individual and group growth. Loyal, responsive to praise and criticism. Sociable, facilitate others in a group, and provide inspiring leadership."
+				sl.utf8="ENFJ opis"
+			/>
+			<match value="ENFP"
+				en.utf8="Warmly enthusiastic and imaginative. See life as full of possibilities. Make connections between events and information very quickly, and confidently proceed based on the patterns they see. Want a lot of affirmation from others, and readily give appreciation and support. Spontaneous and flexible, often rely on their ability to improvise and their verbal fluency."
+				sl.utf8="ENFP opis"
+			/>
+			<match value="ENTJ"
+				en.utf8="Frank, decisive, assume leadership readily. Quickly see illogical and inefficient procedures and policies, develop and implement comprehensive systems to solve organizational problems. Enjoy long-term planning and goal setting. Usually well informed, well read, enjoy expanding their knowledge and passing it on to others. Forceful in presenting their ideas."
+				sl.utf8="ENTJ opis"
+			/>
+			<match value="ENTP"
+				en.utf8="Quick, ingenious, stimulating, alert, and outspoken. Resourceful in solving new and challenging problems. Adept at generating conceptual possibilities and then analyzing them strategically. Good at reading other people. Bored by routine, will seldom do the same thing the same way, apt to turn to one new interest after another."
+				sl.utf8="ENTP opis"
+			/>
+			<match value="ESFJ"
+				en.utf8="Warmhearted, conscientious, and cooperative. Want harmony in their environment, work with determination to establish it. Like to work with others to complete tasks accurately and on time. Loyal, follow through even in small matters. Notice what others need in their day-by-day lives and try to provide it. Want to be appreciated for who they are and for what they contribute."
+				sl.utf8="ESFJ opis"
+			/>
+			<match value="ESFP"
+				en.utf8="Outgoing, friendly, and accepting. Exuberant lovers of life, people, and material comforts. Enjoy working with others to make things happen. Bring common sense and a realistic approach to their work, and make work fun. Flexible and spontaneous, adapt readily to new people and environments. Learn best by trying a new skill with other people."
+				sl.utf8="ESFP opis"
+			/>
+			<match value="ESTJ"
+				en.utf8="Practical, realistic, matter-of-fact. Decisive, quickly move to implement decisions. Organize projects and people to get things done, focus on getting results in the most efficient way possible. Take care of routine details. Have a clear set of logical standards, systematically follow them and want others to also. Forceful in implementing their plans."
+				sl.utf8="ESTJ opis"
+			/>
+			<match value="ESTP"
+				en.utf8="Flexible and tolerant, they take a pragmatic approach focused on immediate results. Theories and conceptual explanations bore them – they want to act energetically to solve the problem. Focus on the here-and-now, spontaneous, enjoy each moment that they can be active with others. Enjoy material comforts and style. Learn best through doing."
+				sl.utf8="ESTP opis"
+			/>
+			<match value="INFJ"
+				en.utf8="Seek meaning and connection in ideas, relationships, and material possessions. Want to understand what motivates people and are insightful about others. Conscientious and committed to their firm values. Develop a clear vision about how best to serve the common good. Organized and decisive in implementing their vision."
+				sl.utf8="INFJ opis"
+			/>
+			<match value="INFP"
+				en.utf8="Idealistic, loyal to their values and to people who are important to them. Want an external life that is congruent with their values. Curious, quick to see possibilities, can be catalysts for implementing ideas. Seek to understand people and to help them fulfill their potential. Adaptable, flexible, and accepting unless a value is threatened."
+				sl.utf8="INFP opis"
+			/>
+			<match value="INTJ"
+				en.utf8="Have original minds and great drive for implementing their ideas and achieving their goals. Quickly see patterns in external events and develop long-range explanatory perspectives. When committed, organize a job and carry it through. Skeptical and independent, have high standards of competence and performance – for themselves and others."
+				sl.utf8="INTJ opis"
+			/>
+			<match value="INTP"
+				en.utf8="Seek to develop logical explanations for everything that interests them. Theoretical and abstract, interested more in ideas than in social interaction. Quiet, contained, flexible, and adaptable. Have unusual ability to focus in depth to solve problems in their area of interest. Skeptical, sometimes critical, always analytical."
+				sl.utf8="INTP opis"
+			/>
+			<match value="ISFJ"
+				en.utf8="Quiet, friendly, responsible, and conscientious. Committed and steady in meeting their obligations. Thorough, painstaking, and accurate. Loyal, considerate, notice and remember specifics about people who are important to them, concerned with how others feel. Strive to create an orderly and harmonious environment at work and at home."
+				sl.utf8="ISFJ opis"
+			/>
+			<match value="ISFP"
+				en.utf8="Quiet, friendly, sensitive, and kind. Enjoy the present moment, what’s going on around them. Like to have their own space and to work within their own time frame. Loyal and committed to their values and to people who are important to them. Dislike disagreements and conflicts, do not force their opinions or values on others."
+				sl.utf8="ISFP opis"
+			/>
+			<match value="ISTJ"
+				en.utf8="Quiet, serious, earn success by thoroughness and dependability. Practical, matter-of-fact, realistic, and responsible. Decide logically what should be done and work toward it steadily, regardless of distractions. Take pleasure in making everything orderly and organized – their work, their home, their life. Value traditions and loyalty."
+				sl.utf8="ISTJ opis"
+			/>
+			<match value="ISTP"
+				en.utf8="Tolerant and flexible, quiet observers until a problem appears, then act quickly to find workable solutions. Analyze what makes things work and readily get through large amounts of data to isolate the core of practical problems. Interested in cause and effect, organize facts using logical principles, value efficiency."
+				sl.utf8="ISTP opis"
+			/>
+		</result>
+	</results>
+</survey>

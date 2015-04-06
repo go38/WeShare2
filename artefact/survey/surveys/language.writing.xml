@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey name="language.writing">
+	<title
+		zh_tw.utf8="寫作"
+		sl.utf8="Pisno sporočanje"
+		en.utf8="Writing"
+	/>
+	<description
+		sl.utf8=""
+		en.utf8=""
+	/>
+	<instructions
+		sl.utf8="Pazljivo preberite vsako izjavo. Če se z izjavo strinjate, obkljukajte ustrezno polje."
+		en.utf8="Read each statement carefully. If you agree with the statement, than tick the appropriate checkbox."
+	/>
+	<translator
+		sl.utf8=""
+		en.utf8=""
+	/>
+	<questions sections="separated">
+		<section name="a1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="A1 - Vstopna raven"
+				en.utf8="A1 - Breakthrough"
+		>
+			<question type="checkbox" id="q1"
+				sl.utf8="S svojimi osebnimi podatki (npr. starost, kraj prebivališča, hobiji) znam izpolniti vprašalnik."
+				en.utf8="I can fill in a survey with my personal details (job, age, address, hobbies)."
+			/>
+			<question type="checkbox" id="q2"
+				sl.utf8="Znam napisati voščilnico (npr. za rojstni dan)."
+				en.utf8="I can write a greeting card, for instance, a birthday card."
+			/>
+			<question type="checkbox" id="q3"
+				sl.utf8="Znam napisati enostavno razglednico (npr. s počitniškimi pozdravi)."
+				en.utf8="I can write a simple postcard (for example, with holiday greetings)."
+			/>
+			<question type="checkbox" id="q4"
+				sl.utf8="Znam napisati sporočilo, s katerim nekomu sporočim, kje sem ali kje se bova sestala."
+				en.utf8="I can write a note to tell somebody where I am or where we are to meet."
+			/>
+			<question type="checkbox" id="q5"
+				sl.utf8="S preprostimi stavki znam nekaj napisati o sebi (npr. kje živim in kaj počnem)."
+				en.utf8="I can write sentences and simple phrases about myself, for example, where I live and what I do."
+			/>
+		</section>
+		<section name="a2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="A2 – Vmesna raven"
+				en.utf8="A2 – Waystage"
+		>
+			<question type="checkbox" id="q6"
+				sl.utf8="Znam napisati kratka, enostavna sporočila."
+				en.utf8="I can write short, simple notes and messages."
+			/>
+			<question type="checkbox" id="q7"
+				sl.utf8="Z enostavnimi izrazi znam opisati dogodek in povedati, kaj se je kdaj in kje zgodilo (npr. zabava, nesreča)."
+				en.utf8="I can describe an event in simple sentences and report what happened when and where (for example, a party or an accident)."
+			/>
+			<question type="checkbox" id="q8"
+				sl.utf8="Z enostavnimi stavki in izrazi znam pisati o stvareh iz vsakdanjega življenja (npr. o ljudeh, krajih, družini, o svojih interesih)."
+				en.utf8="I can write about aspects of my everyday life in simple phrases and sentences (people, places, family, and my interests)."
+			/>
+			<question type="checkbox" id="q9"
+				sl.utf8="Na obrazcu znam izpolniti podatke o izobrazbi, delu, interesih in posebnih znanjih."
+				en.utf8="I can fill in a survey giving an account of my educational background, my job, my interests and my specific skills."
+			/>
+			<question type="checkbox" id="q10"
+				sl.utf8="V pismu se znam na kratko predstaviti (družina, šola, osebni interesi)."
+				en.utf8="I can briefly introduce myself in a letter with simple phrases and sentences (family, school, job, hobbies)."
+			/>
+			<question type="checkbox" id="q11"
+				sl.utf8="Znam pisati enostavne stavke in jih povezovati z enostavnimi vezniki (npr. »in«, »toda«, »ker«, »kajti« itn.)."
+				en.utf8="I can write simple sentences, connecting them with words such as »and«, »but«, »because«."
+			/>
+			<question type="checkbox" id="q12"
+				sl.utf8="V pismu znam uporabiti preproste pozdrave, nagovore in fraze za zahvale ter prošnje."
+				en.utf8="I can write a letter using simple expressions for greeting, addressing, asking or thanking somebody."
+			/>
+			<question type="checkbox" id="q13"
+				sl.utf8="Znam uporabiti najpomembnejše prislove za izražanje časovnega poteka dogajanja (npr. »najprej«, »potem«, »pozneje« ipd.)."
+				en.utf8="I can use the most important adverbs indicating the chronological order of events (first, then, after, etc.)."
+			/>
+		</section>
+		<section name="b1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="B1 – Raven sporazumevalnega praga"
+				en.utf8="B1 – Threshold"
+		>
+			<question type="checkbox" id="q14"
+				sl.utf8="Znam pisati enostavna besedila o različnih področjih, ki me zanimajo in izražati osebne poglede in osebna mnenja."
+				en.utf8="I can write straightforward connected texts on a range of topics within my field of interest and can express personal views and opinions."
+			/>
+			<question type="checkbox" id="q15"
+				sl.utf8="Znam pisati kratka besedila o dogodkih in izkušnjah (npr. o potovanju) za šolski ali kakšen drug časopis."
+				en.utf8="I can write short simple texts about experiences or events, for example about a trip, for a school newspaper or a club newsletter."
+			/>
+			<question type="checkbox" id="q16"
+				sl.utf8="Znam pisati osebna pisma znancem in prijateljem, povprašati po novostih oziroma jih seznaniti z novicami in dogodki."
+				en.utf8="I can write personal letters to friends or acquaintances asking for or giving them news and narrating events."
+			/>
+			<question type="checkbox" id="q17"
+				sl.utf8="V osebnem pismu znam napisati vsebino filma ali knjige oziroma poročati o koncertu."
+				en.utf8="I can describe in a personal letter the plot of a film or a book or give an account of a concert."
+			/>
+			<question type="checkbox" id="q18"
+				sl.utf8="V pismu znam izraziti čustva, kot so žalost, veselje, zanimanje, obžalovanje in sočutje."
+				en.utf8="In a letter I can express feelings such as grief, happiness, interest, regret and sympathy."
+			/>
+			<question type="checkbox" id="q19"
+				sl.utf8="Pisno znam odgovoriti na oglas in povprašati o natančnejših podatkih o nekem izdelku ali neki storitvi (npr. o avtomobilu ali tečaju)."
+				en.utf8="I can reply in written form to advertisements and ask for more complete or more specific information about products (for example, a car or an academic course)."
+			/>
+			<question type="checkbox" id="q20"
+				sl.utf8="Po faksu ali elektronski pošti znam posredovati natančne, enostavne in kratke informacije svojim prijateljem ali sošolcem ali vprašati jih po njih."
+				en.utf8="I can convey—via fax, e-mail or a circular—short simple factual information to friends or colleagues or ask for information in such a way."
+			/>
+			<question type="checkbox" id="q21"
+				sl.utf8="Napisati znam kratek življenjepis."
+				en.utf8="I can write my CV in summary form."
+			/>
+		</section>
+		<section name="b2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="B2 – Višja raven"
+				en.utf8="B2 – Vantage"
+		>
+			<question type="checkbox" id="q22"
+				sl.utf8="V obliki spisov, poročil ali referatov znam pisati jasna in podrobna besedila o različnih temah, ki so povezane z mojim interesnim področjem."
+				en.utf8="I can write clear and detailed texts (compositions, reports or texts of presentations) on various topics related to my field of interest."
+			/>
+			<question type="checkbox" id="q23"
+				sl.utf8="Znam povzeti članek s splošno tematiko."
+				en.utf8="I can write summaries of articles on topics of general interest."
+			/>
+			<question type="checkbox" id="q24"
+				sl.utf8="Znam napisati povzetek informacij iz različnih virov in medijev."
+				en.utf8="I can summarise information from different sources and media."
+			/>
+			<question type="checkbox" id="q25"
+				sl.utf8="Sestaviti znam spis ali pismo bralcev ter utemeljiti razloge za in proti določenemu stališču."
+				en.utf8="I can write a letter to the editor making a statement in favour of or against a point of view."
+			/>
+			<question type="checkbox" id="q26"
+				sl.utf8="Napisati znam razpravo v obliki spisa ali poročila, poudariti pomembne točke ter navesti podrobnosti, ki utemeljeno podkrepijo predstavljeno tezo."
+				en.utf8="I can systematically discuss a topic in a composition or report, emphasising decisive points and including supporting details."
+			/>
+			<question type="checkbox" id="q27"
+				sl.utf8="Podrobno znam pisati o dogodkih, bodisi o realnih bodisi o izmišljenih doživetjih."
+				en.utf8="I can write about events and real or fictional experiences in a detailed and easily comprehensible way."
+			/>
+			<question type="checkbox" id="q28"
+				sl.utf8="Znam napisati kratko oceno filma ali knjige."
+				en.utf8="I can write a short review of a film or a book."
+			/>
+			<question type="checkbox" id="q29"
+				sl.utf8="V osebnem pismu znam izraziti svoj odnos in svoja čustva, poročati o novicah in poudariti tisto, kar je pri določenem dogodku zame pomembno."
+				en.utf8="I can express in a personal letter different feelings and attitudes and can report the news of the day making clear what—in my opinion—are the important aspects of an event."
+			/>
+		</section>
+		<section name="c1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="C1 – Raven učinkovitosti"
+				en.utf8="C1 – Effectiveness"
+		>
+			<question type="checkbox" id="q30"
+				sl.utf8="Na jasen in razumljiv način se znam pisno izražati o številnih strokovnih in splošnih temah."
+				en.utf8="I can express myself in writing on a wide range of general or professional topics in a clear and comprehensible way."
+			/>
+			<question type="checkbox" id="q31"
+				sl.utf8="V sestavku ali delovnem poročilu znam podati zahtevno temo na jasen in razumljiv način in znam poudariti njene najpomembnejše točke."
+				en.utf8="I can present a complex topic in a clear and well structured way, highlighting the most important points, for example, in a composition or a report."
+			/>
+			<question type="checkbox" id="q32"
+				sl.utf8="V komentarju o neki temi ali nekem dogodku znam zelo natančno predstaviti različna stališča in jih podpreti z dodatnimi dokazi in ustreznimi primeri."
+				en.utf8="I can present points of view in a comment on a topic or an event, underlining the main ideas and supporting my reasoning with detailed examples."
+			/>
+			<question type="checkbox" id="q33"
+				sl.utf8="Iz različnih virov znam zbrati informacije in jih sistematično podati v pisni obliki."
+				en.utf8="I can put together information from different sources and relate it in a coherent summary."
+			/>
+			<question type="checkbox" id="q34"
+				sl.utf8="V osebnih pismih znam natančno opisati izkušnje, čustva in dogodke."
+				en.utf8="I can give a detailed description of experiences, feelings and events in a personal letter."
+			/>
+			<question type="checkbox" id="q35"
+				sl.utf8="Znam napisati oblikovno pravilno pismo (npr. reklamacijo ali drug dopis), v katerem pisno zavzamem pozitivno ali negativno stališče do določenega problema."
+				en.utf8="I can write formally correct letters, for example, to complain or to take a stand in favour of or against something."
+			/>
+			<question type="checkbox" id="q36"
+				sl.utf8="Znam napisati prijavo z življenjepisom (npr. za štipendijo ali mednarodno izmenjavo dijakov)."
+				en.utf8="I can write an application with CV (e.g. for a scholarship or international students exchange)."
+			/>
+			<question type="checkbox" id="q37"
+				sl.utf8="Znam pisati oblikovno in stilno pravilna besedila ter besedišče in stil prilagajati naslovniku, besedilni zvrsti in temi."
+				en.utf8="I can write texts which show a high degree of grammatical correctness and vary my vocabulary and style according to the addressee, the kind of text and the topic."
+			/>
+			<question type="checkbox" id="q38"
+				sl.utf8="Tudi bolj zapletene stavčne strukture znam zanesljivo uporabljati in smiselno povezovati različne dele besedila."
+				en.utf8="I can also use more complex grammar structures without fail and connect different parts of text logically."
+			/>
+			<question type="checkbox" id="q39"
+				sl.utf8="Znam izdelati dovolj natančne zapiske referatov in predavanj, tako da jih razumejo tudi drugi."
+				en.utf8="I can write detailed notes of papers and lectures so that they are understandable to others as well."
+			/>
+		</section>
+		<section name="c2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="C2 – Raven mojstrstva"
+				en.utf8="C2 – Mastery"
+		>
+			<question type="checkbox" id="q40"
+				sl.utf8="Pisati znam poročila in članke, ki so vsebinsko zelo kompleksni, a koherentno in tekoče zgrajeni."
+				en.utf8="I can write well structured and easily comprehensible reports and articles on complex matters."
+			/>
+			<question type="checkbox" id="q41"
+				sl.utf8="Lahko napišem obširno poročilo ali esej o stvareh, ki se jih učim, povzamem ideje, ki so jih drugi izrazili, natančno predstavim informacijo in dejstva ter jih presojam."
+				en.utf8="In a report or an essay I can give a complete account of a topic based on my studies, make a summary of the opinions of others, and give and evaluate detailed information and facts."
+			/>
+			<question type="checkbox" id="q42"
+				sl.utf8="Na strukturiran način znam napisati svoje stališče do nekega poročila ali projekta in utemeljiti svoje mnenje."
+				en.utf8="I can write a well structured review of a paper or a project giving reasons for my opinion."
+			/>
+			<question type="checkbox" id="q43"
+				sl.utf8="Znam izraziti svoje kritično mnenje o nekem kulturnem dogodku (film, glasba, gledališče, literatura, radio, televizija)."
+				en.utf8="I can write a critical review of cultural events (film, music, theatre, literature, radio, TV)."
+			/>
+			<question type="checkbox" id="q44"
+				sl.utf8="Pisno znam obnoviti strokovno besedilo ali literarno delo."
+				en.utf8="I can write summaries of factual texts and literary works."
+			/>
+			<question type="checkbox" id="q45"
+				sl.utf8="Pisno znam pripovedovati o svojih izkušnjah na jasen in tekoč način, pri čemer stil prilagodim določeni besedilni zvrsti."
+				en.utf8="I can write narratives about experiences in a clear, fluent style appropriate to the genre."
+			/>
+			<question type="checkbox" id="q46"
+				sl.utf8="Napisati znam uradno pismo, ki je kljub zapleteni vsebini jasno in dobro zgrajeno in ima ustrezen stil glede na posamezno besedilno zvrst in naslovnika (npr. zahteva, pisna prošnja, pismo pomembnejši osebi, nadrejenemu ali poslovni stranki)."
+				en.utf8="I can write clear, well structured complex letters in an appropriate style, for example an application or request, an offer to authorities, superiors or commercial clients."
+			/>
+			<question type="checkbox" id="q47"
+				sl.utf8="V svojih pismih se znam izraziti na ironičen, dvoumen način in s hudomušnim prizvokom."
+				en.utf8="In a letter I can express myself in a consciously ironical, ambiguous and humorous way."
+			/>
+		</section>
+	</questions>
+</survey>

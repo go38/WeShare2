@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey name="survey.myself-others" defaultLanguage="sl.utf8" requiredResponses="true">
+	<title
+		sl.utf8="Jaz in drugi"
+		zh_tw.utf8="自己和別人"		
+	/>
+	<description
+		sl.utf8="&lt;p&gt;Pomemben del našega življenja predstavljajo stiki z drugimi ljudmi. To so ljudje, ki so za nas pomembni, s katerimi skupaj živimo in delamo, na katere se lahko zanesemo in za katere smo tudi mi pomembni. Sem spadajo tudi ljudje, ki nam niso naklonjeni, so do nas sovražni ali nam celo škodujejo.&lt;/p&gt;"
+	/>
+	<instructions
+		sl.utf8="&lt;p&gt;Rešite spodnji vprašalnik. Za vsako trditev izberite ustrezni odgovor na štiristopenjski lestvici.&lt;/p&gt;"
+	/>
+	<translator
+		sl.utf8=""
+	/>
+	<responses>
+		<response id="r01">
+			<option value="left"
+				sl.utf8="sploh ne drži"
+			/>
+			<option value="right"
+				sl.utf8="povsem drži"
+			/>
+		</response>
+	</responses>
+	<questions sections="separated">
+		<section name="A" collapsible="1" collapsed="0"
+			sl.utf8="Jaz"
+		>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q01"
+				sl.utf8="Med pogovorom z vrstniki sem sproščen."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q02"
+				sl.utf8="Z lahkoto sklepam prijateljstva."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q03"
+				sl.utf8="Pri mnogih dejavnostih sodelujem z vrstniki."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q04"
+				sl.utf8="Med vrstniki sem priljubljen."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q05"
+				sl.utf8="Imam mnogo prijateljev."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q06"
+				sl.utf8="Imam kar nekaj  prijateljev, na katere se lahko zanesem."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q07"
+				sl.utf8="Imam toliko prijateljev kot večina mojih vrstnikov."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q08"
+				sl.utf8="Prijatelji mi posvečajo mnogo pozornosti."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q09"
+				sl.utf8="Imam prijatelje tudi med vrstniki nasprotnega spola."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q10"
+				sl.utf8="Nimam težav v stikih z osebami, ki me privlačijo."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q11"
+				sl.utf8="Cenim podobne stvari kot moji starši."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q12"
+				sl.utf8="Imam občutek, da me starši razumejo."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q13"
+				sl.utf8="Starši so večinoma zadovoljni s tem, kar počnem. "
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q14"
+				sl.utf8="S starši se lahko odkrito pogovarjam."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q15"
+				sl.utf8="Z večino učiteljev se dobro razumem."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q16"
+				sl.utf8="Z učitelji večinoma zmorem rešiti morebitne težave."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q17"
+				sl.utf8="Z večino ljudi se lahko sproščeno pogovarjam."
+			/>
+		</section>
+		<section name="B" collapsible="1" collapsed="0"
+			sl.utf8="Skupina"
+		>
+			<question type="text" defaultValue="0" id="q18"
+				sl.utf8="Povprečna vrednost skupine/razreda"
+			/>
+		</section>
+	</questions>
+	<results type="value" mode="range" showResults="true" showSummary="true" showResponses="false" showChart="true">
+		<result section="A"
+			sl.utf8="Jaz"
+		>
+			<range low="0" high="26" include="both"
+				sl.utf8="&lt;p&gt;Vaš rezultat kaže na to, da s stiki, komunikacijo oz. odnosi z drugimi ljudmi niste zadovoljni.&lt;/p&gt;"
+			/>
+			<range low="27" high="40" include="both"
+				sl.utf8="&lt;p&gt;Vaš rezultat kaže na to, da ste s stiki, komunikacijo oz. odnosi z drugimi ljudmi relativno zadovoljni.&lt;/p&gt;"
+			/>
+			<range low="41" high="51" include="both"
+				sl.utf8="&lt;p&gt;Vaš rezultat kaže na to, da ste s stiki, komunikacijo oz. odnosi z drugimi ljudmi zelo zadovoljni.&lt;/p&gt;"
+			/>
+		</result>
+		<result section="B"
+			sl.utf8="Skupina"
+		>
+			<range low="0" high="26" include="both"
+				sl.utf8="&lt;p&gt;Vaš rezultat kaže na to, da s stiki, komunikacijo oz. odnosi z drugimi ljudmi niste zadovoljni.&lt;/p&gt;"
+			/>
+			<range low="27" high="40" include="both"
+				sl.utf8="&lt;p&gt;Vaš rezultat kaže na to, da ste s stiki, komunikacijo oz. odnosi z drugimi ljudmi relativno zadovoljni.&lt;/p&gt;"
+			/>
+			<range low="41" high="51" include="both"
+				sl.utf8="&lt;p&gt;Vaš rezultat kaže na to, da ste s stiki, komunikacijo oz. odnosi z drugimi ljudmi zelo zadovoljni.&lt;/p&gt;"
+			/>
+		</result>
+		<chart type="bar" />
+	</results>
+
+</survey>

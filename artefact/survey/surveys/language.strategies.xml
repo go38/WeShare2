@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey name="language.strategies">
+	<title
+		sl.utf8="Strategije"
+		en.utf8="Strategies"
+		zh_tw.utf8="策略"
+	/>
+	<description
+		sl.utf8=""
+		en.utf8=""
+	/>
+	<instructions
+		sl.utf8="Pazljivo preberite vsako izjavo. Če se z izjavo strinjate, obkljukajte ustrezno polje."
+		en.utf8="Read each statement carefully. If you agree with the statement, than tick the appropriate checkbox."
+	/>
+	<translator
+		sl.utf8=""
+		en.utf8=""
+	/>
+	<questions sections="separated">
+		<section name="a1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="A1 - Vstopna raven"
+				en.utf8="A1 - Breakthrough"
+		>
+			<question type="checkbox" id="q1"
+				sl.utf8="S posameznimi frazami, besedami in gibi znam navezati stik z ljudmi."
+				en.utf8="I can contact people by using simple phrases, words and gestures."
+			/>
+			<question type="checkbox" id="q2"
+				sl.utf8="Znam povedati, da razumem ali da ne razumem."
+				en.utf8="I can say when I don't understand."
+			/>
+			<question type="checkbox" id="q3"
+				sl.utf8="S preprostimi besedami znam zaprositi, naj sogovornik ponovi povedano."
+				en.utf8="I can very simply ask somebody to repeat what they said."
+			/>
+			<question type="checkbox" id="q4"
+				sl.utf8="S preprostimi besedami znam zaprositi, naj sogovornik govori počasneje."
+				en.utf8="I can very simply ask somebody to speak more slowly."
+			/>
+		</section>
+		<section name="a2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="A2 – Vmesna raven"
+				en.utf8="A2 – Waystage"
+		>
+			<question type="checkbox" id="q5"
+				sl.utf8="S frazami znam vzpostaviti stik z ljudmi oziroma jih nagovoriti."
+				en.utf8="I can ask for attention."
+			/>
+			<question type="checkbox" id="q6"
+				sl.utf8="Znam pokazati, da sledim pogovoru."
+				en.utf8="I can indicate when I am following what someone is saying."
+			/>
+			<question type="checkbox" id="q7"
+				sl.utf8="Kadar česa ne razumem, znam govorca na preprost način prositi, naj ponovi povedano."
+				en.utf8="When I don't understand something, I can very simply ask the speaker to repeat what they said."
+			/>
+			<question type="checkbox" id="q8"
+				sl.utf8="Ko ne najdem pravih besed, si znam pomagati z drugimi izrazi."
+				en.utf8="When I cannot find the right words I can help myself with other expressions."
+			/>
+			<question type="checkbox" id="q9"
+				sl.utf8="Ob pomoči slovarja in drugih pripomočkov znam rešiti enostavnejše pisne in ustne naloge."
+				en.utf8="With the help of the dictionary and other aids I can manage simple written and oral tasks."
+			/>
+		</section>
+		<section name="b1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="B1 – Raven sporazumevalnega praga"
+				en.utf8="B1 – Threshold"
+		>
+			<question type="checkbox" id="q10"
+				sl.utf8="Znam potrditi del sogovornikovega besedila in s tem nakazati, da se razumeva."
+				en.utf8="I can repeat part of what someone has said to confirm that we understand each other."
+			/>
+			<question type="checkbox" id="q11"
+				sl.utf8="Znam prositi sogovornika, naj mi dodatno pojasni pravkar povedano."
+				en.utf8="I can ask someone to clarify or elaborate what they have just said."
+			/>
+			<question type="checkbox" id="q12"
+				sl.utf8="Kadar se ne morem spomniti določenega izraza, znam uporabiti preprosto besedo s podobnim pomenom in sogovornika prositi, da me popravi."
+				en.utf8="When I can't think of the word I want, I can use a simple word meaning something similar and invite »correction«."
+			/>
+			<question type="checkbox" id="q13"
+				sl.utf8="Znam voditi pogovor, vendar potrebujem premore, da se pripravim na nadaljevanje stavka ali misli, zlasti pri daljšem prostem govoru."
+				en.utf8="I can lead the conversation, but I need breaks to prepare for continuing the sentence or the thought, particularly in longer speaking."
+			/>
+			<question type="checkbox" id="q14"
+				sl.utf8="Znam uporabljati pripomočke, da razumem napisano ali da sam sestavim besedilo."
+				en.utf8="I can use help so that I can understand the text or to draft the text by myself."
+			/>
+		</section>
+		<section name="b2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="B2 – Višja raven"
+				en.utf8="B2 – Vantage"
+		>
+			<question type="checkbox" id="q15"
+				sl.utf8="Znam uporabljati standardne besedne zveze kot npr. »na to vprašanje je težko odgovoriti«, da pridobim čas za oblikovanje nadaljnjega besedila ali da obdržim besedo."
+				en.utf8="I can use standard phrases like »That's a difficult question to answer« to gain time and keep the turn while formulating what to say."
+			/>
+			<question type="checkbox" id="q16"
+				sl.utf8="Zavedam se svojih poglavitnih napak in se jim med govorom zavestno izogibam."
+				en.utf8="I can make a note of »favourite mistakes« and consciously monitor speech for them."
+			/>
+			<question type="checkbox" id="q17"
+				sl.utf8="Napake, ki jih opazim, ali tiste, ki so vodile v nesporazum, popravim po navadi kar sam."
+				en.utf8="I can generally correct slips and errors if I become conscious of them or if they have led to misunderstandings."
+			/>
+		</section>
+		<section name="c1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="C1 – Raven učinkovitosti"
+				en.utf8="C1 – Effectiveness"
+		>
+			<question type="checkbox" id="q18"
+				sl.utf8="Tekoče obvladam številne izraze, ob pomoči katerih lahko oblikujem pripombe na že povedano, pa tudi tiste izraze, s katerimi pridobim nekaj časa za razmislek, da lahko nemoteno nadaljujem pogovor."
+				en.utf8="I can use fluently a variety of appropriate expressions to preface my remarks in order to get the floor, or to gain time and keep the floor while thinking."
+			/>
+			<question type="checkbox" id="q19"
+				sl.utf8="Svoje prispevke znam spretno prilagoditi prispevkom drugih."
+				en.utf8="I can relate my own contributions skilfully to those of other speakers."
+			/>
+			<question type="checkbox" id="q20"
+				sl.utf8="Izraz, ki se ga trenutno ne morem domisliti, lahko nadomestim s pomensko ustreznim izrazom."
+				en.utf8="I can substitute an equivalent term for a word I can't recall without distracting the listener."
+			/>
+			<question type="checkbox" id="q21"
+				sl.utf8="Samostojno znam pridobiti informacijo in jezikovno rešitev iz različnih virov, jih analizirati, obdelati in uporabiti v svoj namen."
+				en.utf8="Independently I can get information and language solutions from various sources, analyse them, work them out and use them purposefully."
+			/>
+		</section>
+		<section name="c2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="C2 – Raven mojstrstva"
+				en.utf8="C2 – Mastery"
+		>
+			<question type="checkbox" id="q22"
+				sl.utf8="Če pri sporazumevanju naletim na kakšno jezikovno težavo, se ji znam spretno izogniti in težavno mesto tako preoblikovati, da sogovorniki tega niti ne opazijo."
+				en.utf8="I can backtrack and restructure around a difficulty so smoothly the interlocutor is hardly aware of it."
+			/>
+		</section>
+	</questions>
+</survey>

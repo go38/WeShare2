@@ -1,0 +1,14 @@
+ul.rank {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	width: 100%; /*10em;*/
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+}
+ul.rank li {
+	cursor: move;
+	padding: 2px 2px;
+	border: 1px solid #ccc;
+	background-color: #eee;
+}

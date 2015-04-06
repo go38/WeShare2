@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey name="survey.mybody" defaultLanguage="sl.utf8" requiredResponses="true">
+	<title
+		sl.utf8="Moja samopodoba"
+		zh_tw.utf8="我的自尊"
+	/>
+	<description
+		sl.utf8="&lt;p&gt;Ste si kdaj želeli &quot;skočiti iz svoje kože&quot; ali biti &quot;v koži&quot; koga drugega?&lt;/p&gt;&lt;p&gt;Z naslednjim vprašalnikom lahko preverite, kako zadovoljni ste s svojim telesom.&lt;/p&gt;"
+	/>
+	<instructions
+		sl.utf8="&lt;p&gt;Rešite spodnji vprašalnik. Za vsako trditev izberite ustrezni odgovor na štiristopenjski lestvici.&lt;/p&gt;"
+	/>
+	<translator
+		sl.utf8=""
+	/>
+	<responses>
+		<response id="r01">
+			<option value="left"
+				sl.utf8="sploh ne drži"
+			/>
+			<option value="right"
+				sl.utf8="povsem drži"
+			/>
+		</response>
+	</responses>
+	<questions sections="separated">
+		<section name="A" collapsible="1" collapsed="0"
+			sl.utf8="Jaz"
+		>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q01"
+				sl.utf8="V svojem telesu se dobro počutim."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q02"
+				sl.utf8="Sem vsaj toliko privlačen kot moji vrstniki."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q03"
+				sl.utf8="Zaradi svojega videza nisem v zadregi pred drugimi."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q04"
+				sl.utf8="Čutim, da imam dovolj energije."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q05"
+				sl.utf8="Rad se ukvarjam s športom."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q06"
+				sl.utf8="Za svoj videz dobro skrbim."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q07"
+				sl.utf8="Za večino ljudi sem dovolj privlačen."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q08"
+				sl.utf8="Počutim se zdravo."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q09"
+				sl.utf8="S svojo telesno težo sem zadovoljen."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q10"
+				sl.utf8="Rad se pogledam v ogledalo."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q11"
+				sl.utf8="Če bi mi ponudili lepotno operacijo, je ne bi sprejel."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q12"
+				sl.utf8="Dobro skrbim za svojo telesno kondicijo."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q13"
+				sl.utf8="Zdrava prehrana se mi zdi pomembna."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q14"
+				sl.utf8="Zadovoljen sem s svojim stilom oblačenja."
+			/>
+			<question type="scale" scaleSteps="4" br2rows="true" response="r01" id="q15"
+				sl.utf8="Sem spreten."
+			/>
+		</section>
+		<section name="B" collapsible="1" collapsed="0"
+			sl.utf8="Skupina"
+		>
+			<question type="text" defaultValue="0" id="q16"
+				sl.utf8="Povprečna vrednost skupine/razreda"
+			/>
+		</section>
+	</questions>
+	<results type="value" mode="range" showResults="true" showSummary="true" showResponses="false" showChart="true">
+		<result section="A"
+			sl.utf8="Jaz"
+		>
+			<range low="0" high="23" include="both"
+				sl.utf8="&lt;p&gt;Vaš rezultat kaže na to, da s svojim telesom niste zadovoljni.&lt;/p&gt;"
+			/>
+			<range low="24" high="35" include="both"
+				sl.utf8="&lt;p&gt;Vaš rezultat kaže na to, da ste s svojim telesom relativno zadovoljni.&lt;/p&gt;"
+			/>
+			<range low="36" high="45" include="both"
+				sl.utf8="&lt;p&gt;Vaš rezultat kaže na to, da ste s svojim telesom zelo zadovoljni.&lt;/p&gt;"
+			/>
+		</result>
+		<result section="B"
+			sl.utf8="Skupina"
+		>
+			<range low="0" high="23" include="both"
+				sl.utf8="&lt;p&gt;Vaš rezultat kaže na to, da s svojim telesom niste zadovoljni.&lt;/p&gt;"
+			/>
+			<range low="24" high="35" include="both"
+				sl.utf8="&lt;p&gt;Vaš rezultat kaže na to, da ste s svojim telesom relativno zadovoljni.&lt;/p&gt;"
+			/>
+			<range low="36" high="45" include="both"
+				sl.utf8="&lt;p&gt;Vaš rezultat kaže na to, da ste s svojim telesom zelo zadovoljni.&lt;/p&gt;"
+			/>
+		</result>
+		<chart type="bar" />
+	</results>
+</survey>

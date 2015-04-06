@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey name="personality.graphics" version="2011060700" author="unknown">
+	<title
+		en.utf8="Graphical Personality Test"
+		sl.utf8="Grafični test osebnosti"
+		zh_tw.utf8="圖形化的人格測試"
+	/>
+	<description
+		en.utf8="These shapes were developed by a psychologist. They have been tested worldwide, over a period of several years. As we received feedback from our research, we carefully adjusted the color and/or form of each shape, then tested again, until we were left with a highly successful set of shapes. These represent the nine basic personality types."
+		sl.utf8="Te grafične oblike je razvil psiholog. Več let so jih preizkušali po vsem svetu. Ko smo dobili povratne informacije naše raziskave, smo pazljivo popravili barvo in/ali obliko vsake izmed grafičnih oblik in jih ponovno testirali, dokler nismo dobili visoko predstavne množice oblik. Te grafične oblike predstavljajo devet osnovnih tipov osebnosti."
+	/>
+	<instructions
+		en.utf8="Select a shape below that appeals to you the most and discover your personality."
+		sl.utf8="Izberite grafično obliko, ki vam je najbolj všeč in odkrijte svojo osebnost."
+	/>
+	<translator
+		en.utf8=""
+		sl.utf8=""
+	/>
+	<responses>
+		<response id="r01">
+			<option value="0"
+				en.utf8="{image:0.png}"
+				sl.utf8="{image:0.png}"
+				zh.utf8=""
+			/>
+			<option value="1"
+				en.utf8="{image:1.png}"
+				sl.utf8="{image:1.png}"
+				zh.utf8=""
+			/>
+			<option value="2"
+				en.utf8="{image:2.png}"
+				sl.utf8="{image:2.png}"
+				zh.utf8=""
+			/>
+			<option value="3"
+				en.utf8="{image:3.png}"
+				sl.utf8="{image:3.png}"
+				zh.utf8=""
+			/>
+			<option value="4"
+				en.utf8="{image:4.png}"
+				sl.utf8="{image:4.png}"
+				zh.utf8=""
+			/>
+			<option value="5"
+				en.utf8="{image:5.png}"
+				sl.utf8="{image:5.png}"
+				zh.utf8=""
+			/>
+			<option value="6"
+				en.utf8="{image:6.png}"
+				sl.utf8="{image:6.png}"
+				zh.utf8=""
+			/>
+			<option value="7"
+				en.utf8="{image:7.png}"
+				sl.utf8="{image:7.png}"
+				zh.utf8=""
+			/>
+			<option value="8"
+				en.utf8="{image:8.png}"
+				sl.utf8="{image:8.png}"
+				zh.utf8=""
+			/>
+		</response>
+	</responses>
+	<questions sections="separated">
+		<section name="IMG">
+			<question type="imagebox" response="r01" id="q01"
+				en.utf8=""
+				sl.utf8=""
+				zh.utf8=""
+			/>
+		</section>
+	</questions>
+	<results type="value" mode="match" showResults="true" showSummary="false" showResponses="false" showChart="false">
+		<result section="IMG"
+			sl.utf8="Osebnostni tip"
+			en.utf8="Personality type"
+		>
+			<match value="0"
+				sl.utf8="{image:0.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Introspective, Sensitive, Reflective&lt;/b&gt;&lt;p&gt;You come to grips more frequently and thoroughly with yourself and your environment than do most people. You detest superficiality; you'd rather be alone than have to suffer through small talk. But your relationships with your friends are highly intensive, which gives you the inner tranquility and harmony that you need in order to feel good. However it is no problem for you to be alone for extended periods of time, without becoming bored.&lt;/p&gt;"
+				en.utf8="{image:0.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Introspective, Sensitive, Reflective&lt;/b&gt;&lt;p&gt;You come to grips more frequently and thoroughly with yourself and your environment than do most people. You detest superficiality; you'd rather be alone than have to suffer through small talk. But your relationships with your friends are highly intensive, which gives you the inner tranquility and harmony that you need in order to feel good. However it is no problem for you to be alone for extended periods of time, without becoming bored.&lt;/p&gt;"
+			/>
+			<match value="1"
+				sl.utf8="{image:1.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Independent, Unconventional, Unfettered&lt;/b&gt;&lt;p&gt;You demand a free and unattached life for yourself that allows you to determine your own course. You have an artistic bent in your work or leisure activities. Your urge for freedom sometimes causes you to do exactly the opposite of what expected of you. &lt;/p&gt;&lt;p&gt;Your lifestyle is highly individualistic. You would never blindly imitate what is 'in'; on the contrary, you seek to live according to your own ideas and convictions, even if this means swimming against the tide.&lt;/p&gt;"
+				en.utf8="{image:1.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Independent, Unconventional, Unfettered&lt;/b&gt;&lt;p&gt;You demand a free and unattached life for yourself that allows you to determine your own course. You have an artistic bent in your work or leisure activities. Your urge for freedom sometimes causes you to do exactly the opposite of what expected of you. &lt;/p&gt;&lt;p&gt;Your lifestyle is highly individualistic. You would never blindly imitate what is 'in'; on the contrary, you seek to live according to your own ideas and convictions, even if this means swimming against the tide.&lt;/p&gt;"
+			/>
+			<match value="2"
+				sl.utf8="{image:2.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Dynamic, Active, Extroverted&lt;/b&gt;&lt;p&gt;You are quite willing to accept certain risks and to make a strong commitment in exchange for interesting and varied work. Routine, in contrast, tends to have a paralyzing effect on you. &lt;/p&gt;&lt;p&gt;What you like most is to be able to play an active role in events. In doing so, your initiative is highly pronounced.&lt;/p&gt;"
+				en.utf8="{image:2.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Dynamic, Active, Extroverted&lt;/b&gt;&lt;p&gt;You are quite willing to accept certain risks and to make a strong commitment in exchange for interesting and varied work. Routine, in contrast, tends to have a paralyzing effect on you. &lt;/p&gt;&lt;p&gt;What you like most is to be able to play an active role in events. In doing so, your initiative is highly pronounced.&lt;/p&gt;"
+			/>
+			<match value="3"
+				sl.utf8="{image:3.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Down to Earth, Well-Balanced, Harmonious&lt;/b&gt;&lt;p&gt;You value a natural style and love that which is uncomplicated. People admire you because you have both feet planted firmly on the ground and they can depend on you. You give those who are close to you security and space. You are perceived as being warm and human. You reject everything that is garish and trite. You tend to be skeptical toward the whims of fashion trends. For you, clothing has to be practical and unobtrusively elegant.&lt;/p&gt;"
+				en.utf8="{image:3.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Down to Earth, Well-Balanced, Harmonious&lt;/b&gt;&lt;p&gt;You value a natural style and love that which is uncomplicated. People admire you because you have both feet planted firmly on the ground and they can depend on you. You give those who are close to you security and space. You are perceived as being warm and human. You reject everything that is garish and trite. You tend to be skeptical toward the whims of fashion trends. For you, clothing has to be practical and unobtrusively elegant.&lt;/p&gt;"
+			/>
+			<match value="4"
+				sl.utf8="{image:4.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Professional, Pragmatic, Self-Assured&lt;/b&gt;&lt;p&gt;You take charge of your life, and place less faith in your luck and more in your own deeds. You solve problems in a practical, uncomplicated manner. You take a realistic view of the things in your daily life and tackle them without wavering. You are given a great deal of responsibility at work, because people know that you can be depended upon.&lt;/p&gt;&lt;p&gt;Your pronounced strength of will projects your self-assurance to others. You are never fully satisfied until you have accomplished your ideas.&lt;/p&gt;"
+				en.utf8="{image:4.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Professional, Pragmatic, Self-Assured&lt;/b&gt;&lt;p&gt;You take charge of your life, and place less faith in your luck and more in your own deeds. You solve problems in a practical, uncomplicated manner. You take a realistic view of the things in your daily life and tackle them without wavering. You are given a great deal of responsibility at work, because people know that you can be depended upon.&lt;/p&gt;&lt;p&gt;Your pronounced strength of will projects your self-assurance to others. You are never fully satisfied until you have accomplished your ideas.&lt;/p&gt;"
+			/>
+			<match value="5"
+				sl.utf8="{image:5.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Peaceful, Discreet, Non-Aggressive&lt;/b&gt;&lt;p&gt;You are easy-going yet discreet. You make friends effortlessly, yet enjoy your privacy and independence. You like to get away from it all and be alone from time to time to contemplate the meaning of life and enjoy yourself. You need space, so you escape to beautiful hideaways, but you are not a loner. You are at peace with yourself and the world, and you appreciate life and what this world has to offer.&lt;/p&gt;"
+				en.utf8="{image:5.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Peaceful, Discreet, Non-Aggressive&lt;/b&gt;&lt;p&gt;You are easy-going yet discreet. You make friends effortlessly, yet enjoy your privacy and independence. You like to get away from it all and be alone from time to time to contemplate the meaning of life and enjoy yourself. You need space, so you escape to beautiful hideaways, but you are not a loner. You are at peace with yourself and the world, and you appreciate life and what this world has to offer.&lt;/p&gt;"
+			/>
+			<match value="6"
+				sl.utf8="{image:6.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Carefree, Playful, Cheerful&lt;/b&gt;&lt;p&gt;You love a free and spontaneous life. And you attempt to enjoy it to the fullest, in accordance with the motto: 'You only live once.'&lt;/p&gt;&lt;p&gt;You are very curious and open about everything new; you thrive on change. Nothing is worse than when you feel tied down. You experience your environment as being versatile and always good for a surprise.&lt;/p&gt;"
+				en.utf8="{image:6.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Carefree, Playful, Cheerful&lt;/b&gt;&lt;p&gt;You love a free and spontaneous life. And you attempt to enjoy it to the fullest, in accordance with the motto: 'You only live once.'&lt;/p&gt;&lt;p&gt;You are very curious and open about everything new; you thrive on change. Nothing is worse than when you feel tied down. You experience your environment as being versatile and always good for a surprise.&lt;/p&gt;"
+			/>
+			<match value="7"
+				sl.utf8="{image:7.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Romantic, Dreamy, Emotional&lt;/b&gt;&lt;p&gt;You are a very sensitive person. You refuse to view things only from a sober, rational standpoint. What your feelings tell you is just as important to you. In fact, you feel it is important to have dreams in life, too. &lt;/p&gt;&lt;p&gt;You reject people who scorn romanticism and are guided only by rationality. You refuse to let anything confine the rich variety of your moods and emotions.&lt;/p&gt;"
+				en.utf8="{image:7.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Romantic, Dreamy, Emotional&lt;/b&gt;&lt;p&gt;You are a very sensitive person. You refuse to view things only from a sober, rational standpoint. What your feelings tell you is just as important to you. In fact, you feel it is important to have dreams in life, too. &lt;/p&gt;&lt;p&gt;You reject people who scorn romanticism and are guided only by rationality. You refuse to let anything confine the rich variety of your moods and emotions.&lt;/p&gt;"
+			/>
+			<match value="8"
+				sl.utf8="{image:8.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Analytical, Trustworthy, Self-Assured&lt;/b&gt;&lt;p&gt;Your momentary sensitivity represents that which is of high quality and durable. Consequently, you like to surround yourself with little 'gems', which you discover wherever they are overlooked by others. &lt;/p&gt;&lt;p&gt;Thus, culture plays a special role in your life. You have found your own personal style, which is elegant and exclusive, free from the whims of fashion. Your ideal, upon which you base your life, is cultured pleasure. You value a certain level of culture on the part of the people with whom you associate.&lt;/p&gt;"
+				en.utf8="{image:8.png}&lt;br&gt;&lt;br&gt;&lt;b&gt;Analytical, Trustworthy, Self-Assured&lt;/b&gt;&lt;p&gt;Your momentary sensitivity represents that which is of high quality and durable. Consequently, you like to surround yourself with little 'gems', which you discover wherever they are overlooked by others. &lt;/p&gt;&lt;p&gt;Thus, culture plays a special role in your life. You have found your own personal style, which is elegant and exclusive, free from the whims of fashion. Your ideal, upon which you base your life, is cultured pleasure. You value a certain level of culture on the part of the people with whom you associate.&lt;/p&gt;"
+			/>
+		</result>
+	</results>
+</survey>

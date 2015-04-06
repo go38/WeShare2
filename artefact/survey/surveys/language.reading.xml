@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey name="language.reading">
+	<title
+		sl.utf8="Bralno razumevanje"
+		en.utf8="Reading comprehension"
+		zh_tw.utf8="Reading comprehension"
+	/>
+	<description
+		sl.utf8=""
+		en.utf8=""
+	/>
+	<instructions
+		sl.utf8="Pazljivo preberite vsako izjavo. Če se z izjavo strinjate, obkljukajte ustrezno polje."
+		en.utf8="Read each statement carefully. If you agree with the statement, than tick the appropriate checkbox."
+	/>
+	<translator
+		sl.utf8=""
+		en.utf8=""
+	/>
+	<questions sections="separated">
+		<section name="a1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="A1 - Vstopna raven"
+				en.utf8="A1 - Breakthrough"
+		>
+			<question type="checkbox" id="q1"
+				sl.utf8="V časopisnih člankih razumem osebne podatke (kraj prebivališča, starost ipd.)"
+				en.utf8="I can understand information about people (where they live, age, etc.) in newspapers."
+			/>
+			<question type="checkbox" id="q2"
+				sl.utf8="Na podlagi plakatov za prireditve se lahko odločim za ogled koncerta ali filma in razberem, kje in kdaj se bo prireditev dogajala."
+				en.utf8="I can locate a concert or a film on calendars of public events or posters and identify where it takes place and at what time it starts."
+			/>
+			<question type="checkbox" id="q3"
+				sl.utf8="Prebrani vprašalnik (npr. na carini ali pri prijavi prenočišča v hotelu) toliko razumem, da lahko vpišem svoje osebne podatke (npr. ime, priimek, datum rojstva, narodnost)."
+				en.utf8="I can understand a survey (entry permit form, hotel registration form) well enough to give the most important information about myself (name, surname, date of birth, nationality)."
+			/>
+			<question type="checkbox" id="q4"
+				sl.utf8="Razumem besede in izraze na znakih, ki jih srečujem v vsakdanjem življenju (npr. »železniška postaja«, »parkirišče«, »kaditi prepovedano«, »ostani na desnem pasu«)."
+				en.utf8="I can understand words and phrases on signs encountered in everyday life (for instance »station«, »car park«, »no parking«, »no smoking«)."
+			/>
+			<question type="checkbox" id="q5"
+				sl.utf8="Razumem najpomembnejše računalniške ukaze (npr. »natisni«, »shrani«, »kopiraj«, itd.)."
+				en.utf8="I can understand the most important orders in a computer programme such as »Print«, »Save«, »Copy«, etc."
+			/>
+			<question type="checkbox" id="q6"
+				sl.utf8="Razumem kratko, enostavno pisno razlago (npr. »levo«, »desno«, »naprej«, »nazaj«)."
+				en.utf8="I can understand simple directions (»left«, »right«, »forward«, »back«)."
+			/>
+			<question type="checkbox" id="q7"
+				sl.utf8="Razumem kratka sporočila na razglednicah (npr. pozdrave s počitnic)."
+				en.utf8="I can understand short simple messages on postcards, for example, holiday greetings."
+			/>
+			<question type="checkbox" id="q8"
+				sl.utf8="V vsakdanjem življenju znam prebrati enostavnejša pisna sporočila svojih znancev in sošolcev (npr. »Vrnem se ob 16.00«)."
+				en.utf8="In everyday situations I can understand simple messages written by friends or colleagues, for example, »Back at 4 o'clock«."
+			/>
+			<question type="checkbox" id="q9"
+				sl.utf8="Razumem enostavne besede in stavke na oglasnih deskah, reklamnih tablah, v katalogih in brošurah."
+				en.utf8="I can understand simple words and sentences on notice boards, advertising boards, in catalogues and brochures."
+			/>
+		</section>
+		<section name="a2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="A2 – Vmesna raven"
+				en.utf8="A2 – Waystage"
+		>
+			<question type="checkbox" id="q10"
+				sl.utf8="Iz sporočil ali enostavnih časopisnih člankov, ki vsebujejo predvsem števila, imena, slike in napise lahko razberem pomembne informacije."
+				en.utf8="I can identify important information in messages or simple newspaper articles in which numbers and names play an important role and which are clearly structured and illustrated."
+			/>
+			<question type="checkbox" id="q11"
+				sl.utf8="Razumem enostavno osebno pismo, v katerem mi kdo piše o stvareh iz vsakdanjega življenja ali me o tem sprašuje."
+				en.utf8="I can understand a simple personal letter in which the writer tells or asks me about aspects of everyday life."
+			/>
+			<question type="checkbox" id="q12"
+				sl.utf8="Razumem enostavna pisna sporočila svojih znancev in sošolcev (npr. kdaj se srečamo, da bi igrali nogomet) ali obvestilo, da moram priti predčasno v šolo."
+				en.utf8="I can understand simple written messages from friends or class-mates, for example, saying when we should meet to play football or asking me to be at school early."
+			/>
+			<question type="checkbox" id="q13"
+				sl.utf8="Z letakov o dejavnostih v prostem času, o razstavah ipd. lahko razberem najpomembnejše podatke."
+				en.utf8="I can find the most important information on leisure time activities, exhibitions, etc. in information leaflets."
+			/>
+			<question type="checkbox" id="q14"
+				sl.utf8="V časopisu lahko preletim male oglase, najdem iskano rubriko in poiščem najpomembnejše informacije (npr. o značilnostih, ceni in velikosti stanovanja, avta, računalnika ipd.)."
+				en.utf8="I can skim small advertisements in newspapers; locate the heading or column I want and identify the most important pieces if information (for example about characteristics, price and largeness of an apartment, car, computer, etc.)"
+			/>
+			<question type="checkbox" id="q15"
+				sl.utf8="Razumem kratke zgodbe o vsakdanjih stvareh in znanih temah, če so napisane v enostavnem jeziku."
+				en.utf8="I can understand short narratives about everyday things dealing with topics which are familiar to me if the text is written in simple language."
+			/>
+		</section>
+		<section name="b1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="B1 – Raven sporazumevalnega praga"
+				en.utf8="B1 – Threshold"
+		>
+			<question type="checkbox" id="q16"
+				sl.utf8="Razumem bistveno vsebino časopisnega članka z aktualno in poznano temo."
+				en.utf8="I can understand the main points in short newspaper articles about current and familiar topics."
+			/>
+			<question type="checkbox" id="q17"
+				sl.utf8="V časopisih in revijah razumem večino komentarjev in intervjujev, v katerih ljudje izrazijo osebno stališče glede aktualnih tem ali dogodkov."
+				en.utf8="I can read columns or interviews in newspapers and magazines in which someone presents an opinion on a current topic or event and understand the overall meaning of the text."
+			/>
+			<question type="checkbox" id="q18"
+				sl.utf8="Iz sobesedila lahko razberem nekatere neznane besede, ki mi omogočajo slediti bistvu napisanega."
+				en.utf8="I can guess the meaning of single unknown words from the context, thus deducing the meaning of expressions if the topic is familiar."
+			/>
+			<question type="checkbox" id="q19"
+				sl.utf8="Hitro lahko preletim kratka besedila (npr. kratka sporočila) in najdem dejstva in pomembne informacije (npr. kaj je kdo počel in kje)."
+				en.utf8="I can skim short texts (for example, short messages) and find relevant facts and information (for example, who has done what and where)."
+			/>
+			<question type="checkbox" id="q20"
+				sl.utf8="Razumem najpomembnejše informacije v kratkih in enostavnih brošurah iz vsakdanjega življenja."
+				en.utf8="I can understand the most important information in short simple everyday information brochures."
+			/>
+			<question type="checkbox" id="q21"
+				sl.utf8="Razumem enostavna sporočila in standardna pisma iz podjetij, društev in javnih ustanov."
+				en.utf8="I can extract relevant information from short official texts meant for the public (for example, school rules or public regulations)."
+			/>
+			<question type="checkbox" id="q22"
+				sl.utf8="V zasebnem pismu razumem opise dogodkov, čustev in želja v tolikšni meri, da si lahko z nekom zasebno dopisujem."
+				en.utf8="In private letters I can understand those parts dealing with events, feelings and wishes well enough to correspond regularly with a pen-friend."
+			/>
+			<question type="checkbox" id="q23"
+				sl.utf8="Lahko sledim poteku zgodbe, če je dobro razčlenjena, ter v njej prepoznavam najpomembnejše dogodke in ocenim, kako pomembni so."
+				en.utf8="I can understand the plot of a clearly structured story and recognise what the most important episodes and events are and what is significant about them."
+			/>
+		</section>
+		<section name="b2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="B2 – Višja raven"
+				en.utf8="B2 – Vantage"
+		>
+			<question type="checkbox" id="q24"
+				sl.utf8="Hitro dojamem vsebino in pomembnost novic, člankov in poročil o temah, ki me zanimajo ali so povezane z mojim izobraževanjem, in se odločim, ali so vredni temeljitega branja."
+				en.utf8="I can rapidly grasp the content and the significance of news, articles and reports on topics connected with my interests or my job and decide if a closer reading is worthwhile."
+			/>
+			<question type="checkbox" id="q25"
+				sl.utf8="Lahko berem in razumem članke in poročila o aktualnih vprašanjih, v katerih avtorji zastopajo določeno stališče in mnenje."
+				en.utf8="I can read and understand articles and reports on current issues in which the writers express specific attitudes and points of view."
+			/>
+			<question type="checkbox" id="q26"
+				sl.utf8="Podrobno razumem besedila s tematiko, ki me zanima ali je povezana s področjem mojega izobraževanja."
+				en.utf8="I can understand in detail texts within my field of interest or the area of my education."
+			/>
+			<question type="checkbox" id="q27"
+				sl.utf8="Berem in razumem tudi strokovne članke, ki se ne nanašajo na moje izobraževalno področje, če za kontrolo občasno uporabljam slovar."
+				en.utf8="I can understand specialised articles outside my own field if I can occasionally check in a dictionary."
+			/>
+			<question type="checkbox" id="q28"
+				sl.utf8="Berem kritike, ki se nanašajo na vsebino in oceno kulturnih dogodkov (filmi, gledališče, knjige, koncerti), in povzemam bistvo."
+				en.utf8="I can read reviews dealing with the content and criticism of cultural topics (films, theatre, books, concerts) and summarise the main points."
+			/>
+			<question type="checkbox" id="q29"
+				sl.utf8="Berem dopise o tematiki znotraj svojega izobraževalnega ali interesnega področja in povzemam bistvene točke."
+				en.utf8="I can read letters on topics within my areas of academic or professional specialisation or interest and grasp the most important points."
+			/>
+			<question type="checkbox" id="q30"
+				sl.utf8="Hitro lahko preletim priročnik (npr. o računalniškem programu) ter za določen problem najdem ustrezno razlago in pomoč."
+				en.utf8="I can quickly look through a manual (for example, for a computer program) and find and understand the relevant explanations and help for a specific problem."
+			/>
+			<question type="checkbox" id="q31"
+				sl.utf8="V romanu ali dramskem delu prepoznam motive književnih oseb za njihova dejanja in razumem posledice njihovih odločitev."
+				en.utf8="I can understand in a narrative or play the motives for the characters' actions and their consequences for the development of the plot."
+			/>
+		</section>
+		<section name="c1" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="C1 – Raven učinkovitosti"
+				en.utf8="C1 – Effectiveness"
+		>
+			<question type="checkbox" id="q32"
+				sl.utf8="Razumem tudi zahtevnejša in daljša besedila ter jih znam ustno ali/in pisno povzeti."
+				en.utf8="I can understand fairly long demanding texts and summarise them orally or in written form."
+			/>
+			<question type="checkbox" id="q33"
+				sl.utf8="Lahko berem poglobljena poročila ter poglobljene analize in komentarje, v katerih so podana razmerja, mnenja in stališča."
+				en.utf8="I can read complex reports, analyses and commentaries where opinions, viewpoints and connections are discussed."
+			/>
+			<question type="checkbox" id="q34"
+				sl.utf8="Iz visoko specializiranih besedil s svojega interesnega področja (npr. iz poročil o raziskavah) znam povzeti informacije, ideje, stališča."
+				en.utf8="I can extract information, ideas and opinions from highly specialised texts in my own field, for example, research reports."
+			/>
+			<question type="checkbox" id="q35"
+				sl.utf8="Če imam dovolj časa za branje, razumem tudi zahtevnejša navodila (npr. o uporabi nove naprave), čeprav niso povezana s področjem, ki me zanima."
+				en.utf8="I can understand fairly long complex directions and instructions, for example, for the use of a new piece of equipment, even if these are not related to my job or field of interest, provided I have enough time to reread them."
+			/>
+			<question type="checkbox" id="q36"
+				sl.utf8="Z občasno uporabo slovarja razumem vsakovrstno korespondenco."
+				en.utf8="I can read any correspondence with the occasional use of a dictionary."
+			/>
+			<question type="checkbox" id="q37"
+				sl.utf8="Tekoče berem sodobna literarna besedila."
+				en.utf8="I can read contemporary literary texts with ease."
+			/>
+			<question type="checkbox" id="q38"
+				sl.utf8="Na podlagi literarnega besedila znam oblikovati stališča, v besedilu pa razumem tudi sporočila, ki niso dobesedno napisana, ter razmerja med deli besedila."
+				en.utf8="I can go beyond the concrete plot of a narrative and grasp implicit meanings, ideas and connections."
+			/>
+			<question type="checkbox" id="q39"
+				sl.utf8="Tudi pri zahtevnejših besedilih znam ugotoviti nasprotja, vsebinska neskladja in nelogične utemeljitve."
+				en.utf8="I can recognise the social, political or historical background and possible inconsistencies of a literary work."
+			/>
+		</section>
+		<section name="c2" collapsible="1" collapsed="0" pass="80%"
+				sl.utf8="C2 – Raven mojstrstva"
+				en.utf8="C2 – Mastery"
+		>
+			<question type="checkbox" id="q40"
+				sl.utf8="V besedilu prepoznam besedne igre, tudi če je pomen drugačen od dobesedno zapisanega (npr. ironija, satira)."
+				en.utf8="I can recognise plays on words and appreciate texts whose real meaning is not explicit (for example, irony, satire)."
+			/>
+			<question type="checkbox" id="q41"
+				sl.utf8="Razumem besedilo, ki je pogovorno obarvano in vsebuje veliko idiomatskih zvez in slengovskih besed."
+				en.utf8="I can understand texts written in a very colloquial style and containing many idiomatic expressions or slang."
+			/>
+			<question type="checkbox" id="q42"
+				sl.utf8="Razumem priročnike, uredbe in pogodbe, tudi če ne sodijo na področje, za katero se zanimam."
+				en.utf8="I can understand manuals, regulations and contracts even within unfamiliar fields."
+			/>
+			<question type="checkbox" id="q43"
+				sl.utf8="Lahko berem sodobna in klasična literarna dela različnih zvrsti (poezijo, prozo, dramska besedila)."
+				en.utf8="I can understand contemporary and classical literary texts of different genres (poetry, prose, drama)."
+			/>
+			<question type="checkbox" id="q44"
+				sl.utf8="Lahko berem besedila, kot so literarne kolumne ali satirični komentarji, v katerih je veliko povedanega posredno in ima besedilo dvojni pomen, in lahko razvozlam skriti pomen besedila."
+				en.utf8="I can read texts such as literary columns or satirical glosses where much is said in an indirect and ambiguous way and which contain hidden value judgements."
+			/>
+			<question type="checkbox" id="q45"
+				sl.utf8="Prepoznam različne stilne značilnosti (besedne igre, metafore, literarne motive, simboliko, dvoumnosti in konotacije besed) in razumem njihovo vlogo v besedilu."
+				en.utf8="I can recognise different stylistic means (puns, metaphors, symbols, connotations, ambiguity) and appreciate and evaluate their function within the text."
+			/>
+		</section>
+	</questions>
+</survey>

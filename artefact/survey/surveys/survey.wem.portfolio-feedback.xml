@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey name="survey.wem.portfolio-feedback" version="2011090800" author="Workplace Education Manitoba" url="http://www.wem.mb.ca/">
+	<title
+		en.utf8="ePortfolio Feedback"
+		zh_tw.utf8="ePortfolio 回饋單"
+	/>
+	<copyright
+		en.utf8="Copyright © 2011 Workplace Education Manitoba. All rights reserved."
+	/>
+	<description
+		en.utf8="Description should go here..."
+	/>
+	<instructions
+		en.utf8="No special instructions..."
+	/>
+	<responses>
+		<response id="r01">
+			<option value="0"
+				en.utf8="finding a job"
+			/>
+			<option value="1"
+				en.utf8="changing careers"
+			/>
+			<option value="2"
+				en.utf8="getting a promotion or pay raise"
+			/>
+			<option value="3"
+				en.utf8="getting academic recognition"
+			/>
+			<option value="4"
+				en.utf8="getting a professional qualification"
+			/>
+			<option value="5"
+				en.utf8="developing my own skills and knowledge"
+			/>
+		</response>
+		<response id="r02">
+			<option value="0"
+				en.utf8="Not selected"
+			/>
+			<option value="1"
+				en.utf8="Yes"
+			/>
+			<option value="2"
+				en.utf8="No"
+			/>
+		</response>
+		<response id="r03">
+			<option value="0"
+				en.utf8="Not confident"
+			/>
+			<option value="1"
+				en.utf8="Confident"
+			/>
+			<option value="2"
+				en.utf8="Very confident"
+			/>
+		</response>
+		<response id="r04">
+			<option value="0"
+				en.utf8="Not aware"
+			/>
+			<option value="1"
+				en.utf8="Aware"
+			/>
+			<option value="2"
+				en.utf8="Very aware"
+			/>
+		</response>
+	</responses>
+	<questions sections="tabbed">
+		<section name="part1" collapsible="0" collapsed="0" en.utf8="Part One: Employability">
+			<question type="checks" br2rows="true" response="r01" id="q11"
+				en.utf8="Which of the purposes below would you like your ePortfolio to help you with?"
+			/>
+			<question type="radio" br2rows="true" response="r02" id="q12"
+				en.utf8="Are you currently unemployed or or under-employed?"
+			/>
+			<question type="select" br2rows="true" response="r03" id="q13"
+				en.utf8="If you are unemployed or or under-employed, how confident are you that you are going to find the job you want?"
+			/>
+			<question type="select" br2rows="true" response="r03" id="q14"
+				en.utf8="How confident are you in your level of English?"
+			/>
+			<question type="select" br2rows="true" response="r04" id="q15"
+				en.utf8="Rate your awareness of Essential Skills:"
+			/>
+			<question type="select" br2rows="true" response="r04" id="q16"
+				en.utf8="Rate your awareness of portfolios:"
+			/>
+		</section>
+		<section name="part2" collapsible="0" collapsed="0" en.utf8="Part Two: Technology Skills">
+			<question type="select" br2rows="true" response="r03" id="q21"
+				en.utf8="How confident are you with using a computer in your everyday life?"
+			/>
+			<question type="select" br2rows="true" response="r03" id="q22"
+				en.utf8="How confident are you with using Google search?"
+			/>
+			<question type="select" br2rows="true" response="r03" id="q23"
+				en.utf8="How confident are you with using internet services such as Facebook, Delicious, YouTube, etc?"
+			/>
+			<question type="select" br2rows="true" response="r03" id="q24"
+				en.utf8="How confident are you with editing images using software tools?"
+			/>
+			<question type="select" br2rows="true" response="r03" id="q25"
+				en.utf8="How confident are you with editing audio recording using software tools?"
+			/>
+			<question type="select" br2rows="true" response="r03" id="q26"
+				en.utf8="How confident are you with using a digital camera?"
+			/>
+		</section>
+		<section name="part3" collapsible="0" collapsed="0" en.utf8="Part Three: Comments">
+			<question type="wysiwyg" rows="8" cols="80" br2rows="true" id="q31"
+				en.utf8="Do you have any comments to make at this time? If not, just leave blank."
+			/>
+		</section>
+	</questions>
+	<results showResults="false" showSummary="false" showResponses="false" showChart="false">
+	</results>
+</survey>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey name="language.listening" version="" author="" helpLanguage="secondary">
+	<title
+		zh_tw.utf8="聽力"
+		sl.utf8="Slušno razumevanje"
+		en.utf8="Listening comprehension"
+	/>
+	<description
+		sl.utf8=""
+		en.utf8=""
+	/>
+	<instructions
+		sl.utf8="Pazljivo preberite vsako izjavo. Če se z izjavo strinjate, obkljukajte ustrezno polje."
+		en.utf8="Read each statement carefully. If you agree with the statement, than tick the appropriate checkbox."
+	/>
+	<translator
+		sl.utf8=""
+		en.utf8=""
+	/>
+	<questions sections="separated">
+		<section name="A1" collapsible="1" collapsed="0" color="255,0,0,100"
+			sl.utf8="A1 – Vstopna raven"
+			en.utf8="A1 – Breakthrough"
+		>
+			<question type="checkbox" id="q01" help="1"
+				sl.utf8="Razumem pomen pri počasni in razločni izgovorjavi z daljšimi premori."
+				en.utf8="I can understand when someone speaks very slowly to me and articulates carefully, with long pauses for me to assimilate meaning."
+			/>
+			<question type="checkbox" id="q02"
+				sl.utf8="Razumem preprosta navodila o tem, kako priti peš ali z javnim prevozom z enega kraja na drugega."
+				en.utf8="I can understand simple directions on how to get from X to Y, on foot or by public transport."
+			/>
+			<question type="checkbox" id="q03" help="1"
+				sl.utf8="Razumem vprašanja in nasvete, ki so podani počasi in razločno ter sem sposoben slediti preprostim navodilom."
+				en.utf8="I can understand questions and instructions addressed carefully and slowly to me and follow short, simple directions."
+			/>
+			<question type="checkbox" id="q04"
+				sl.utf8="Razumem izraze za števila, cene, čas."
+				en.utf8="I can understand numbers, prices and times."
+			/>
+		</section>
+		<section name="A2" collapsible="1" collapsed="0" color="255,0,0,100"
+			sl.utf8="A2 – Vmesna raven"
+			en.utf8="A2 – Waystage"
+		>
+			<question type="checkbox" id="q05"
+				sl.utf8="V preprostih vsakodnevnih pogovorih razumem jasno, počasno govorjenje, naslovljeno name."
+				en.utf8="I can understand what is said clearly, slowly and directly to me in simple everyday conversation/speech."
+			/>
+			<question type="checkbox" id="q06"
+				sl.utf8="Prepoznavam besedne zveze, besede in izraze, ki se nanašajo na najnujnejše reči (npr. najosnovnejši osebni in družinski podatki, nakupi, bližnja okolica, zaposlitev)."
+				en.utf8="I can recognise phrases, words and expressions related to areas of most immediate priority (e.g. very basic personal and family information, shopping, local geography, employment)."
+			/>
+			<question type="checkbox" id="q07"
+				sl.utf8="Prepoznam temo pogovora, če ljudje govorijo počasi in razločno."
+				en.utf8="I can generally identify the topic of discussion when people speak slowly and clearly."
+			/>
+			<question type="checkbox" id="q08"
+				sl.utf8="Razumem bistvo kratkih jasnih in preprostih sporočil in napovedi."
+				en.utf8="I can understand the main point in short and simple messages and announcements."
+			/>
+			<question type="checkbox" id="q09"
+				sl.utf8="Razumem bistvo televizijskih poročil, ko je komentar podprt s sliko."
+				en.utf8="I can understand the essential information of the television news if commentary is supported by an image."
+			/>
+			<question type="checkbox" id="q10"
+				sl.utf8="Iz radijskih in televizijskih programov ter filmov in videov znam izluščiti bistveno sporočilo."
+				en.utf8="I can identify the main point of television and radio news as well as movies and videos."
+			/>
+			<question type="checkbox" id="q11"
+				sl.utf8="V krajših posnetih besedilih, ki se nanašajo na znane teme, razumem tudi določene podrobnosti, če lahko besedilo poslušam več kot enkrat."
+				en.utf8="In short recorded massages dealing with known themes I can also understand some details if I can listen to the text more than once."
+			/>
+		</section>
+		<section name="B1" collapsible="1" collapsed="0" color="0,255,0,100"
+			sl.utf8="B1 – Raven sporazumevalnega praga"
+			en.utf8="B1 – Threshold"
+		>
+			<question type="checkbox" id="q12"
+				sl.utf8="V vsakdanjih pogovorih lahko sledim razločnemu govoru, vendar moram včasih govorca prositi, naj ponovi določene besede in besedne zveze."
+				en.utf8="I can follow clearly articulated speech directed at me in everyday conversation, though I sometimes have to ask for the repetition of particular words and phrases."
+			/>
+			<question type="checkbox" id="q13"
+				sl.utf8="Na splošno lahko sledim daljšemu razgovoru, vendar le, če je govor razločen in v standardnem jeziku."
+				en.utf8="I can generally follow the main points of extended discussion around me, provided speech is clearly articulated in standard dialect."
+			/>
+			<question type="checkbox" id="q14"
+				sl.utf8="Sposoben sem poslušati krajšo pripoved in predvideti nadaljnje dogajanje."
+				en.utf8="I can listen to a short narrative and speculate about what will happen next."
+			/>
+			<question type="checkbox" id="q15"
+				sl.utf8="Razumem vsebino in bistvo radijskih poročil in tonskih posnetkov, če so prebrana počasi in razločno."
+				en.utf8="I can understand the main points of radio news bulletins and simpler recorded material on topics of personal interest when delivered relatively slowly and clearly."
+			/>
+			<question type="checkbox" id="q16"
+				sl.utf8="Lahko povzamem vsebino in bistvo televizijskih oddaj, če so prebrani počasi in razločno."
+				en.utf8="I can understand the main points of television programmes on familiar topics when the delivery is relatively slow and clear."
+			/>
+			<question type="checkbox" id="q17"
+				sl.utf8="Razumem preproste tehnične informacije, kot so navodila za uporabo vsakdanjih tehničnih naprav."
+				en.utf8="I can understand simple technical information, such as operating instructions for everyday equipment."
+			/>
+		</section>
+		<section name="B2" collapsible="1" collapsed="0" color="0,255,0,100"
+			sl.utf8="B2 – Višja raven"
+			en.utf8="B2 – Vantage"
+		>
+			<question type="checkbox" id="q18"
+				sl.utf8="Tudi v hrupnem okolju podrobno razumem, kaj mi kdo pove v standardnem jeziku."
+				en.utf8="I can understand in detail what is said to me in standard spoken language, even in a noisy environment."
+			/>
+			<question type="checkbox" id="q19"
+				sl.utf8="Lahko sledim predavanjem ali referatom, ki se nanašajo na moje izobraževalno področje, če poznam tematiko in če je povedano na preprost in jasen način."
+				en.utf8="I can follow a lecture or talk within my own field, provided the subject matter is familiar and the presentation straightforward and clearly structured."
+			/>
+			<question type="checkbox" id="q20"
+				sl.utf8="Pri poslušanju radia lahko razumem večino dokumentarnih oddaj v standardnem jeziku in ocenim razpoloženje govorca."
+				en.utf8="I can understand most radio documentaries delivered in standard language and can identify the speaker's mood, tone, etc."
+			/>
+			<question type="checkbox" id="q21"
+				sl.utf8="Pri gledanju televizije razumem dokumentarne in razvedrilne oddaje, intervjuje in večino filmov, če niso v narečju, pač pa v standardnem jeziku."
+				en.utf8="I can understand TV documentaries, live interviews, talk shows, plays and the majority of films in standard dialect."
+			/>
+			<question type="checkbox" id="q22"
+				sl.utf8="Razumem bistvo sporočil o konkretnih in abstraktnih temah v standardnem jeziku, razumem pa tudi strokovne razprave s svojega izobraževalnega področja."
+				en.utf8="I can understand the main ideas of complex speech on both concrete and abstract topics delivered in a standard dialect, including technical discussions in my field of specialisation."
+			/>
+			<question type="checkbox" id="q23"
+				sl.utf8="Za razumevanje uporabljam različne prijeme (npr. prisluhnem glavnim točkam ali uporabim napotke iz tematike), da preverjam svoje razumevanje."
+				en.utf8="I can use a variety of strategies to achieve comprehension, for example, listening for main points or checking comprehension by using contextual clues."
+			/>
+		</section>
+		<section name="C1" collapsible="1" collapsed="0" color="0,0,255,100"
+			sl.utf8="C1 – Raven učinkovitosti"
+			en.utf8="C1 – Effectiveness"
+		>
+			<question type="checkbox" id="q24"
+				sl.utf8="Znam slediti daljšim govornim prispevkom in pogovorom, čeprav njihova zgradba in situacija, v kateri pogovor poteka, nista jasni/izraziti."
+				en.utf8="I can follow extended speech even when it is not clearly structured and when relationships are only implied and not signalled explicitly."
+			/>
+			<question type="checkbox" id="q25"
+				sl.utf8="Razumem precej idiomatskih in pogovornih izrazov ter slogovno in funkcijsko različnost."
+				en.utf8="I can understand a wide range of idiomatic expressions and colloquialisms, appreciating shifts in style and register."
+			/>
+			<question type="checkbox" id="q26"
+				sl.utf8="Tudi iz javnih obvestil slabše kakovosti (npr. na postajah javnih prevoznih sredstev, športnih prizoriščih itn.) znam izluščiti podatke, ki jih potrebujem."
+				en.utf8="I can extract specific information even from poor quality, audibly distorted public announcements, e.g. in a station, sports stadium, etc."
+			/>
+			<question type="checkbox" id="q27"
+				sl.utf8="Razumem zapletene tehnične podatke, kot so navodila za uporabo/upravljanje, specifikacije za izdelke in storitve, ki jih poznam."
+				en.utf8="I can understand complex technical information, such as operating instructions or specifications for familiar products and services."
+			/>
+			<question type="checkbox" id="q28"
+				sl.utf8="Razumem predavanja, govore in poročila s svojega interesnega področja, čeprav so vsebinsko ali jezikovno zahtevni."
+				en.utf8="I can understand lectures, talks and reports in my field of interest even when the content and language are complex."
+			/>
+			<question type="checkbox" id="q29"
+				sl.utf8="Brez posebnega napora razumem filme, v katerih so uporabljeni sleng in idiomatski izrazi."
+				en.utf8="I can without too much effort understand films employing a considerable degree of slang and idiomatic usage."
+			/>
+		</section>
+		<section name="C2" collapsible="1" collapsed="0" color="0,0,255,100"
+			sl.utf8="C2 – Raven mojstrstva"
+			en.utf8="C2 – Mastery"
+		>
+			<question type="checkbox" id="q30"
+				sl.utf8="Nimam nobenih težav pri razumevanju govorjenega jezika, ne glede na to, ali sledim pogovorom v živo ali v medijih, tudi če govorijo hitro. Potrebujem samo nekaj časa, da se navadim na poseben naglas."
+				en.utf8="I have no difficulty in understanding any kind of spoken language, whether live or broadcast, even when delivered at fast, native-speaker-like speed, provided I have some time to become familiar with the accent."
+			/>
+		</section>
+	</questions>
+	<results type="percent" mode="range" showResults="1" showSummary="1" showResponses="0" showChart="1">
+		<result section="A1">
+			<range low="0%" high="80%" include="low"
+				sl.utf8="Stopnja A1 ni dosežena."
+				en.utf8="Level A1 not completed."
+			/>
+			<range low="80%" high="100%" include="both"
+				sl.utf8="Stopnja A1 dosežena."
+				en.utf8="Level A1 completed."
+			/>
+		</result>
+		<result section="A2">
+			<range low="0%" high="80%" include="low"
+				sl.utf8="Stopnja A2 ni dosežena."
+				en.utf8="Level A2 not completed."
+			/>
+			<range low="80%" high="100%" include="both"
+				sl.utf8="Stopnja A2 dosežena."
+				en.utf8="Level A2 completed."
+			/>
+		</result>
+		<result section="B1">
+			<range low="0%" high="80%" include="low"
+				sl.utf8="Stopnja B1 ni dosežena."
+				en.utf8="Level B1 not completed."
+			/>
+			<range low="80%" high="100%" include="both"
+				sl.utf8="Stopnja B1 dosežena."
+				en.utf8="Level B1 completed."
+			/>
+		</result>
+		<result section="B2">
+			<range low="0%" high="80%" include="low"
+				sl.utf8="Stopnja B2 ni dosežena."
+				en.utf8="Level B2 not completed."
+			/>
+			<range low="80%" high="100%" include="both"
+				sl.utf8="Stopnja B2 dosežena."
+				en.utf8="Level B2 completed."
+			/>
+		</result>
+		<result section="C1">
+			<range low="0%" high="80%" include="low"
+				sl.utf8="Stopnja C1 ni dosežena."
+				en.utf8="Level C1 not completed."
+			/>
+			<range low="80%" high="100%" include="both"
+				sl.utf8="Stopnja C1 dosežena."
+				en.utf8="Level C1 completed."
+			/>
+		</result>
+		<result section="C2">
+			<range low="0%" high="80%" include="low"
+				sl.utf8="Stopnja C2 ni dosežena."
+				en.utf8="Level C2 not completed."
+			/>
+			<range low="80%" high="100%" include="both"
+				sl.utf8="Stopnja C2 dosežena."
+				en.utf8="Level C2 completed."
+			/>
+		</result>
+		<!-- type: Area, Bar, Line, Plot, PlotLine, Spline, 2DPie, 3DPie, Radar, Polar -->
+		<chart type="bar" coloroverride="true" />
+	</results>
+</survey>
