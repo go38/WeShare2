@@ -453,6 +453,3 @@ EOF;
     chmod($save_to, get_config('directorypermissions') & 0666);
     return language_fix_value_from_file($string[$stringid]);
 }
-
-
-?>
