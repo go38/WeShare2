@@ -1,0 +1,25 @@
+a
+
+# --------------
+# Please enter the commit message for your changes. Everything below
+# this paragraph is ignored, and an empty message aborts the commit.
+# Just close the window to accept your message.
+diff --git a/account/delete.php b/account/delete.php
+index 2d71c52..37ed1b0 100644
+--- a/account/delete.php
++++ b/account/delete.php
+@@ -1,12 +1,12 @@
+ <?php
+ /**
+  *
+- * @package    mahara
++ * @package    mahara 
+  * @subpackage core
+  * @author     Catalyst IT Ltd
+  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL version 3 or later
+  * @copyright  For copyright information on Mahara, please see the README file distributed with this software.
+- *
++ *  by Eric
+  */
+ 
+ define('INTERNAL', 1);
